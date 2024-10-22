@@ -1,0 +1,25 @@
+.about-section-container {
+    position: relative;
+    /* height: 100vh; */
+    background-image: url('/src/assets/standingperson.png'); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* This keeps the background fixed during scrolling */
+  }
+  
+  .about-section-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 0; /* Position behind content */
+  }
+  
+  #about {
+    position: relative; /* Position content above the overlay */
+    z-index: 1; /* Ensure content is above the overlay */
+  }
+  
