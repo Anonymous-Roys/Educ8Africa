@@ -5,6 +5,7 @@ const JobCard = ({ title, description, onShowMore, darkMode }) => {
       <p className="mb-4 text-justify">{description}</p>
 
       <button
+      disabled
         onClick={onShowMore} // Open modal with job details
         className={`text-red-500 hover:text-red-600 font-medium ${darkMode ? 'text-red-400' : 'text-red-600'}`}
       >
