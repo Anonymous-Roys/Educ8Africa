@@ -46,7 +46,7 @@ const Modal = ({
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-8
+      className={`fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 md:p-4
         transition-all duration-300 
         ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
       `}

@@ -69,7 +69,7 @@ const JobCardModal = ({
         <div
           ref={modalRef}
           className={`
-            inline-block w-full ${maxWidth} p-6 my-8
+            inline-block w-full ${maxWidth} p-6 my-4
             text-left align-middle transition-all duration-300
             transform shadow-2xl rounded-xl
             ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}

@@ -4,6 +4,7 @@ import { jobs } from '../data/jobs';
 import JobCardModal from './JobCardModal';
 import Modal from './Modal';
 import { FaThList, FaThLarge } from 'react-icons/fa'; // Import icons for the layout toggle
+import { Scrollbars } from 'react-custom-scrollbars-2'
 
 const JobBoard = ({ darkMode }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,7 +35,7 @@ const JobBoard = ({ darkMode }) => {
   return (
     <div id="joblist" className={`mt-4 max-w-7xl mx-auto py-12 px-4 transition-all duration-500 ${darkMode ? 'bg-gray-900 text-white' : ' text-gray-900'}`}>
       {/* Search Bar and Layout Toggle */}
-      <div className="mb-8 flex justify-between items-center md:flex-row flex-col">
+      <div className="flex flex-col items-center justify-between mb-8 md:flex-row">
         <h1 className={`text-4xl font-bold text-red-700`}>
           Job Openings
         </h1>
@@ -73,60 +74,88 @@ const JobBoard = ({ darkMode }) => {
           <p className="text-red-500">No jobs found.</p>
         )}
       </div>
-
       {/* Modal for Job Details and Apply */}
       {selectedJob && (
         <JobCardModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} darkMode={darkMode}>
-          <h2 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-            {selectedJob.title}
-          </h2>
-          <p className="mb-4">{selectedJob.description}</p>
-
-          <div className="space-y-4">
-            <div>
-              <h4 className="font-semibold mb-2">Responsibilities:</h4>
-              <ul className="list-disc list-inside space-y-1">
-                {selectedJob.responsibilities.map((resp, index) => (
-                  <li key={index}>{resp}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2">Qualifications:</h4>
-              <ul className="list-disc list-inside space-y-1">
-                {selectedJob.qualifications.map((qual, index) => (
-                  <li key={index}>{qual}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-2">Benefits:</h4>
-              <ul className="list-disc list-inside space-y-1">
-                {selectedJob.benefits.map((benefit, index) => (
-                  <li key={index}>{benefit}</li>
-                ))}
-              </ul>
-            </div>
+        <h2 className={`text-2xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+          {selectedJob.title}
+        </h2>
+        
+        <p className="mb-4">{selectedJob.description}</p>
+      
+          <Scrollbars style={{height:'56vh'}}>
+        <div className="space-y-4">
+          {/* Responsibilities */}
+          <div>
+            <h4 className="mb-2 font-semibold">Responsibilities:</h4>
+            {Object.entries(selectedJob.responsibilities).map(([category, tasks], index) => (
+              <div key={index} className="mb-2">
+                <h5 className="font-medium">{category.replace(/([A-Z])/g, ' $1')}</h5> {/* Turn 'contentCreation' into 'Content Creation' */}
+                <ul className="space-y-1 list-disc list-inside">
+                  {tasks.map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-
-          <button
-            onClick={() => handleApply(selectedJob)}
-            className="bg-red-600 text-white px-6 py-2 rounded-md hover:bg-red-700 transition-colors mt-6"
-          >
-            Apply Now
-          </button>
-          <Modal isOpen={isApplyOpen} onClose={() => setIsApplyOpen(false)} darkMode={darkMode}>
-            <h2 className={`text-xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Apply for {selectedJob.title}
-            </h2>
-            <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>
-              If you are a motivated and enthusiastic individual looking to contribute to a thriving online community and gain valuable experience in the field of cybersecurity, we encourage you to apply. Please submit your resume and cover letter to <a href="mailto:davidarhin2005@gmail.com" className="underline">davidarhin2005@gmail.com</a>.
-            </p>
-          </Modal>
-        </JobCardModal>
+      
+          {/* Qualifications */}
+          <div>
+            <h4 className="mb-2 font-semibold">Qualifications:</h4>
+            <ul className="space-y-1 list-disc list-inside">
+              {selectedJob.qualifications.map((qual, index) => (
+                <li key={index}>{qual}</li>
+              ))}
+            </ul>
+          </div>
+      
+          {/* Skills */}
+          <div>
+            <h4 className="mb-2 font-semibold">Skills:</h4>
+            <ul className="space-y-1 list-disc list-inside">
+              {selectedJob.skills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+      
+          {/* Benefits */}
+          <div>
+            <h4 className="mb-2 font-semibold">Benefits:</h4>
+            <ul className="space-y-1 list-disc list-inside">
+              {selectedJob.benefits.map((benefit, index) => (
+                <li key={index}>{benefit}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        </Scrollbars>
+        {/* Application Button */}
+        <button
+          onClick={() => handleApply(selectedJob)}
+          className="px-6 py-2 mt-6 text-white transition-colors bg-red-600 rounded-md hover:bg-red-700"
+        >
+          Apply Now
+        </button>
+      
+        {/* Application Modal */}
+        <Modal isOpen={isApplyOpen} onClose={() => setIsApplyOpen(false)} darkMode={darkMode}>
+          <h2 className={`text-xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+            Apply for {selectedJob.title}
+          </h2>
+          <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>
+            If you are a motivated and enthusiastic individual looking to contribute to a thriving online
+            community and gain valuable experience in the field of cybersecurity, we encourage you to apply.
+            Please submit your resume and cover letter to <a href="mailto:davidarhin2005@gmail.com" className="underline">educ8africa@gmail.com</a>.
+          </p>
+        </Modal>
+      </JobCardModal>
+     
+      
+    
       )}
+
     </div>
   );
 };
