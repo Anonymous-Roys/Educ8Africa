@@ -54,7 +54,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
        
 
-        {/* Navigation Links */}
         <nav className={`hidden md:flex space-x-6`}>
           <a
             href="#joblist"
@@ -103,7 +102,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
        <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className={`md:hidden p-2 rounded-lg ${
-            darkMode ? "bg-gray-700 " : "bg-gray-100"
+            darkMode
+            ? "bg-gray-700 hover:bg-gray-600"
+            : "bg-gray-100 hover:bg-gray-200"
           } transition-colors`}
           aria-label="Toggle mobile menu"
           >
@@ -111,7 +112,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           {mobileMenuOpen ? (
             <span className="text-gray-600">✖</span> // Close icon
           ) : (
-            <span className="text-gray-100">☰</span> // Open icon
+            <span className={`${darkMode ? 'text-gray-100':'text-gray-900'}`}>☰</span> // Open icon
           )}
         </button>
           </div>
@@ -119,7 +120,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
       {/* Mobile Navigation Links */}
       {mobileMenuOpen && (
-        <nav className="md:hidden bg-white shadow-md">
+        <nav className="bg-white shadow-md md:hidden">
           <a
             href="#joblist"
             className={`block px-4 py-2 text-lg font-semibold ${
