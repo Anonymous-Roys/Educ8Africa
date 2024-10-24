@@ -147,7 +147,7 @@ const JobBoard = ({ darkMode }) => {
           <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>
             If you are a motivated and enthusiastic individual looking to contribute to a thriving online
             community and gain valuable experience in the field of cybersecurity, we encourage you to apply.
-            Please submit your resume and cover letter to <a href="mailto:davidarhin2005@gmail.com" className="underline">careers@educ8africa.com</a>.
+            Please submit your resume and cover letter to <a href="mailto:careers@educ8africa.com" className="underline">careers@educ8africa.com</a>.
           </p>
         </Modal>
       </JobCardModal>
