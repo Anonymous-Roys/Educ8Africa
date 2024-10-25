@@ -1,3 +1,5 @@
+import { MapPin } from "lucide-react";
+
 const JobCard = ({ title, description, onShowMore, darkMode }) => {
   return (
     <div className={`flex flex-col rounded-lg items-baseline justify-between shadow-lg p-6 mb-6 transition-all ${darkMode ? 'bg-gray-800 hover:bg-gray-750 text-white' : 'bg-white hover:shadow-xl text-gray-800'}`}>
@@ -16,7 +18,10 @@ const JobCard = ({ title, description, onShowMore, darkMode }) => {
    > 
         Show More
       </button>
-      <div className="p-2 font-semibold text-gray-100 bg-red-500 border-2 border-red-400 rounded-full right-6">Remote</div>
+      <div className="p-2 font-semibold text-gray-100 bg-red-500 border-[1px] border-red-400 rounded-full">
+    <MapPin size={20} className="inline-block mr-2 animate-icon" />
+    Remote
+</div>
     </div>
    </div>
   );

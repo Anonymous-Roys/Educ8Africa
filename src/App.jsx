@@ -1,34 +1,18 @@
-
-import { useState } from 'react';
-import JobBoard from './component/JobBoard'
-import LandingPage from './component/LandingPage';
-import Navbar from './component/Navbar';
-import Footer from './component/Footer';
-import About from './component/About';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home'
+import ErrorPage from './pages/ErrorPage';
+import './App.css'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
- 
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
-    <>
-    
-         <div className={`min-h-screen ${darkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <LandingPage darkMode={darkMode}/>
-        <About darkMode={darkMode} />
-      <JobBoard darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
-      
-    </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        {/* Add more routes for other components */}
+        <Route path="*" element={<ErrorPage/>} /> {/* Catch-all route for errors */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
