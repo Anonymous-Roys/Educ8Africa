@@ -7,14 +7,18 @@ const JobCard = ({ title, description, onShowMore, darkMode }) => {
       <p className="mb-4 text-justify">{description}</p>
       </div>
 
+<div className="flex justify-between w-full">
+  
       <button
    
-        onClick={onShowMore} // Open modal with job details
-        className={` text-red-500 hover:text-red-600 font-medium ${darkMode ? 'text-red-400' : 'text-red-600'}`}
-      >
+   onClick={onShowMore} // Open modal with job details
+   className={` text-red-500 hover:text-red-600 font-medium ${darkMode ? 'text-red-400' : 'text-red-600'}`}
+   > 
         Show More
       </button>
+      <div className="p-2 font-semibold text-gray-100 bg-red-500 border-2 border-red-400 rounded-full right-6">Remote</div>
     </div>
+   </div>
   );
 };
 

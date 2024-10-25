@@ -171,52 +171,7 @@ const jobs = [
     ],
     applicationInstructions: "This internship provides an opportunity for a motivated student to gain practical experience in cybersecurity content strategy and contribute to a dynamic team."
   },
-  {
-    title: "Campus Ambassador (Cybersecurity Internship)",
-    organization: "[Company Name]",
-    location: "On-campus",
-    description: "As a Campus Ambassador, you will play a crucial role in promoting our partially sponsored courses to students on your campus. You will report directly to the Outreach Lead and be responsible for generating interest, answering questions, and encouraging students to enroll in our programs.",
-    responsibilities: {
-      CampusOutreach: [
-        "Actively engage with students on campus through various channels, including social media, student organizations, and in-person events"
-      ],
-      CoursePromotion: [
-        "Create and distribute marketing materials, such as flyers, posters, and digital content, to promote our partially sponsored courses"
-      ],
-      StudentEngagement: [
-        "Provide information about our courses, answer student questions, and address concerns"
-      ],
-      EnrollmentCoordination: [
-        "Assist students in the enrollment process, including collecting necessary documentation and guiding them through the application process"
-      ],
-      EventPlanning: [
-        "Organize and participate in campus events related to our courses, such as workshops, seminars, or information sessions"
-      ],
-      DataCollection: [
-        "Track student interest and enrollment data to provide insights for program improvement"
-      ]
-    },
-    qualifications: [
-      "Enrolled in a [relevant field] program at a recognized university or college",
-      "Strong communication and interpersonal skills",
-      "Ability to work independently and as part of a team",
-      "Passion for education and a desire to help students succeed",
-      "Experience in marketing, sales, or customer service is a plus"
-    ],
-    skills: [
-      "Marketing and promotion",
-      "Strong communication and presentation skills",
-      "Ability to engage with students and manage event logistics",
-      "Attention to detail in collecting data and insights"
-    ],
-    benefits: [
-      "Competitive compensation or commission structure",
-      "Opportunity to gain valuable experience in marketing, sales, and customer service",
-      "Networking opportunities with industry professionals",
-      "Flexible work schedule to accommodate your academic commitments"
-    ],
-    applicationInstructions: "If you are a motivated and enthusiastic student looking to make a positive impact on your campus community, we encourage you to apply for this exciting opportunity. Please submit your resume and a cover letter to [Email Address]."
-  },
+
   {
     title: "Associate Outreach Lead (Cybersecurity Internship)",
     organization: "[Company Name]",
@@ -261,10 +216,246 @@ const jobs = [
       "Flexibility to work remotely"
     ],
     applicationInstructions: "If you are a motivated and enthusiastic individual with a passion for education and outreach, we encourage you to apply for this leadership position. Please submit your resume and a cover letter to [Email Address]."
-  }
+  },
+  {
+    title: "Associate Partnership Lead",
+    organization: "Educ8africa",
+    location: "[City, Country]",
+    description: "Develop and maintain strategic partnerships with corporations and organizations to enhance resources, funding, and student opportunities at Educ8africa.",
+    responsibilities: {
+      PartnershipDevelopment: [
+        "Identify and cultivate potential partnerships with corporations and relevant organizations",
+        "Research and understand the needs and objectives of potential partners",
+        "Develop and maintain strong relationships with key stakeholders"
+      ],
+      FundingAcquisition: [
+        "Secure funding from corporations, foundations, and government agencies",
+        "Prepare grant proposals and manage the funding application process"
+      ],
+      InternshipPlacement: [
+        "Establish and maintain relationships with companies to secure internships for students",
+        "Coordinate the internship placement process, including matching students with suitable opportunities and providing guidance and support"
+      ],
+      Networking: [
+        "Represent the school at industry events, conferences, and networking functions",
+        "Build and maintain a strong professional network within the education and business sectors"
+      ],
+      Reporting: [
+        "Prepare regular reports on partnership activities, funding secured, and internship placements",
+        "Analyze partnership performance and identify areas for improvement"
+      ]
+    },
+    qualifications: [
+      "Currently enrolled in a relevant academic program (e.g., business, education, or a related field)",
+      "Strong interest in partnership development, fundraising, or business development",
+      "Excellent communication and interpersonal skills",
+      "Ability to work independently and as part of a team",
+      "Strong organizational and time management skills"
+    ],
+    skills: [
+      "Partnership development",
+      "Fundraising and grant proposal writing",
+      "Networking",
+      "Project and time management",
+      "Effective communication and teamwork"
+    ],
+    benefits: [
+      "Gain valuable hands-on experience in a dynamic and fast-paced environment",
+      "Work closely with senior leadership and learn from experienced professionals",
+      "Develop essential skills in partnership development, fundraising, and business development",
+      "Contribute to the growth and success of a leading training institution"
+    ],
+    duration: "[Duration of internship]",
+    applicationDeadline: "[Application Deadline]",
+    applicationInstructions: "If you are a highly motivated and results-oriented individual with a passion for education and partnership development, we encourage you to apply. Please submit your resume and cover letter to [Email Address]."
+  },
+  {
+    title: "Online Community Engagement Associate",
+    organization: "[Cybersecurity Training Institution Name]",
+    location: "[Location]",
+    description: "Foster a positive online community for Educ8africa by engaging with students, alumni, and industry professionals. This role includes community management, customer service, content creation, and analytics.",
+    responsibilities: {
+      CommunityManagement: [
+        "Foster a positive and inclusive online community environment",
+        "Facilitate discussions, answer questions, and provide support to community members",
+        "Identify and address potential issues or conflicts within the community"
+      ],
+      CustomerService: [
+        "Respond to inquiries, comments, and messages on our social media platforms and forums",
+        "Assist with enrollment inquiries and provide program information",
+        "Resolve customer concerns with guidance from experienced team members"
+      ],
+      ContentCreation: [
+        "Assist in creating and curating content for online platforms, such as blog posts, articles, and social media updates",
+        "Share content curated by the content strategists"
+      ],
+      AnalyticsAndReporting: [
+        "Track and analyze community engagement metrics to assess the effectiveness of our online initiatives",
+        "Prepare regular reports on community activity and trends"
+      ]
+    },
+    qualifications: [
+      "Strong understanding of social media platforms and online communities",
+      "Excellent written and verbal communication skills",
+      "Ability to work independently and collaboratively",
+      "Strong customer service skills",
+      "Interest in cybersecurity and technology"
+    ],
+    skills: [
+      "Proficiency in social media management tools (e.g., Hootsuite, Buffer)",
+      "Experience with CRM software",
+      "Familiarity with community forum management tools (e.g., Discourse, Reddit)"
+    ],
+    benefits: [
+      "Gain hands-on experience in community management and social media",
+      "Opportunity to learn about the cybersecurity industry",
+      "Competitive salary and benefits package"
+    ],
+    duration: "[Duration of Internship]",
+    applicationDeadline: "[Application Deadline]",
+    applicationInstructions: "Please submit your resume and cover letter to [Email Address]"
+  },
+  {
+    title: "Graphic Designer",
+    organization: "Educ8africa",
+    location: "Remote",
+    description: "Create visually compelling graphics and designs to enhance Educ8africa's branding and communications. Collaborate with the marketing and content teams to produce materials that resonate with our audience.",
+    responsibilities: {
+      DesignCreation: [
+        "Develop engaging graphics for platforms including social media, websites, newsletters, and promotional materials",
+        "Design infographics, presentations, and educational resources that convey information effectively"
+      ],
+      Branding: [
+        "Ensure brand consistency across all visual materials, adhering to brand guidelines",
+        "Create templates and design assets for team use across various projects"
+      ],
+      Collaboration: [
+        "Work closely with marketing and content teams to understand project requirements and objectives",
+        "Incorporate feedback from team members and stakeholders to refine designs"
+      ],
+      TrendsAndInnovations: [
+        "Stay updated on design trends, tools, and techniques to enhance design quality and effectiveness",
+        "Experiment with new styles and formats to engage our audience"
+      ],
+      FileManagement: [
+        "Organize and maintain a library of design assets and files for easy access",
+        "Prepare and deliver final design files in suitable formats for various platforms"
+      ]
+    },
+    qualifications: [
+      "Proficiency in graphic design software (e.g., Adobe Creative Suite: Photoshop, Illustrator, InDesign, or similar)",
+      "Strong portfolio showcasing a range of design work, including digital and print materials",
+      "Excellent visual communication skills with a keen eye for aesthetics and detail",
+      "Ability to work independently and as part of a collaborative team",
+      "Interest in cybersecurity and technology"
+    ],
+    skills: [
+      "Graphic design and illustration",
+      "Branding and visual identity",
+      "Familiarity with social media and digital marketing principles"
+    ],
+    benefits: [
+      "Gain valuable experience in graphic design for an educational organization",
+      "Opportunity to learn about cybersecurity and its applications",
+      "Competitive salary and benefits package"
+    ],
+    duration: "[Duration of Internship]",
+    applicationDeadline: "[Application Deadline]",
+    applicationInstructions: "Please submit your resume and portfolio of your work to [Email Address]"
+  },
+  {
+    title: "Associate Research Coordinator Intern",
+    description: "Support the company's cybersecurity initiatives by conducting in-depth research on cybersecurity news, trends, resources, internships, and job opportunities. Work directly under the CEO and contribute to technical writing projects.",
+    responsibilities: {
+        Research: [
+            "Conduct in-depth research to gather and analyze information on cybersecurity news, trends, and emerging technologies.",
+            "Identify and evaluate cybersecurity resources by discovering and assessing free online courses, certifications, and other educational materials."
+        ],
+        InternshipsAndJobs: [
+            "Explore internship and job opportunities by researching and curating relevant internships and job openings in the cybersecurity field."
+        ],
+        TechnicalWriting: [
+            "Contribute to technical writing projects by assisting in creating technical articles, blog posts, and other written materials."
+        ],
+        IndustryMonitoring: [
+            "Stay updated on industry developments by monitoring cybersecurity news and developments to keep the company informed."
+        ],
+        Collaboration: [
+            "Collaborate with the CEO to understand research needs and contribute to strategic goals."
+        ]
+    },
+    qualifications: [
+        "Pursuing a degree in cybersecurity or a related field.",
+        "Strong research and analytical skills.",
+        "Excellent written and verbal communication skills.",
+        "Ability to work independently and meet deadlines.",
+        "Proficiency in research tools and databases.",
+        "Interest in cybersecurity and a passion for learning."
+    ],
+    skills: [
+        "Experience with technical writing.",
+        "Knowledge of cybersecurity concepts and best practices.",
+        "Familiarity with cybersecurity tools and software."
+    ],
+    benefits: [
+        "Gain valuable experience in the cybersecurity field.",
+        "Opportunity to work closely with industry professionals.",
+        "Develop research and writing skills.",
+        "Contribute to the growth of a dynamic company."
+    ],
+    notes: "This internship is ideal for individuals looking to build a career in cybersecurity. The intern will play a vital role in supporting the company's efforts to stay ahead in this rapidly evolving field."
+},
+{
+    title: "Freelance Associate Technical Writer",
+    description: "The Technical Writer Intern will create informative and engaging cybersecurity content for our blog. Working with the Associate Research Coordinator, Content Strategist, and other team members, this role is key to educating our audience on industry topics.",
+    responsibilities: {
+        ContentCreation: [
+            "Research and write technical articles by conducting in-depth research on cybersecurity topics and writing clear, concise, and informative blog posts.",
+            "Develop engaging content that resonates with and is relevant to our target audience."
+        ],
+        Editing: [
+            "Edit and proofread to ensure all content is error-free and adheres to company quality standards."
+        ],
+        Collaboration: [
+            "Collaborate with team members to brainstorm ideas and develop content strategies."
+        ],
+        TrendMonitoring: [
+            "Stay updated on industry trends by monitoring cybersecurity developments and integrating timely topics into content."
+        ]
+    },
+    qualifications: [
+        "Strong writing and communication skills.",
+        "Interest in cybersecurity and technology.",
+        "Ability to work independently and meet deadlines.",
+        "Research and analytical skills."
+    ],
+    skills: [
+        "Experience in technical writing or content creation.",
+        "Familiarity with SEO best practices.",
+        "Understanding of cybersecurity concepts."
+    ],
+    benefits: [
+        "Gain experience in technical writing and content creation.",
+        "Develop your portfolio with published work.",
+        "Learn about the cybersecurity industry.",
+        "Flexible hours and remote work opportunities."
+    ],
+    notes: "This is a freelance position, allowing for flexible work hours and the ability to work remotely."
+}
+
+
+
+
+
+
+
+
+
+
+
 ];
 
 
-  export {
-    jobs
-  }
+export {
+  jobs
+}

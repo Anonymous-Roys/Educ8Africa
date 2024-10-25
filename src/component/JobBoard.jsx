@@ -6,6 +6,7 @@ import Modal from './Modal';
 import { FaThList, FaThLarge } from 'react-icons/fa'; // Import icons for the layout toggle
 import { Scrollbars } from 'react-custom-scrollbars-2'
 
+// eslint-disable-next-line react/prop-types
 const JobBoard = ({ darkMode }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isApplyOpen, setIsApplyOpen] = useState(false);
@@ -36,7 +37,7 @@ const JobBoard = ({ darkMode }) => {
     <div id="joblist" className={`mt-4 max-w-7xl mx-auto py-12 px-4 transition-all duration-500 ${darkMode ? 'bg-gray-900 text-white' : ' text-gray-900'}`}>
       {/* Search Bar and Layout Toggle */}
       <div className="flex flex-col items-center justify-between mb-8 md:flex-row">
-        <h1 className={`text-4xl font-bold text-red-700`}>
+        <h1 className={`text-4xl font-bold text-red-700 mb-4`}>
           Job Openings
         </h1>
         <div className="flex items-center space-x-4">

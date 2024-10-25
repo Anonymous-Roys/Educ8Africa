@@ -89,7 +89,7 @@ const LandingPage = ({ darkMode }) => {
           `}
         >
           Be a part of{' '}
-          <span className="text-indigo-500 font-bold">Educ8Africa</span>, and shape
+          <span className="font-bold text-red-700 md:text-gray-900">Educ8Africa</span>, and shape
           the future of cybersecurity education across Africa.
           <br className="hidden md:block" />
           We&apos;re calling on passionate innovators to help us make a difference.
@@ -97,7 +97,7 @@ const LandingPage = ({ darkMode }) => {
       </div>
 
       {/* Large down arrow for scrolling */}
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute transform -translate-x-1/2 bottom-2 left-1/2 animate-bounce">
       <button
         onClick={handleScroll}
         className={`absolute bottom-2 left-1/2 -translate-x-1/2
