@@ -685,7 +685,89 @@ const jobs = [
   duration: "[Duration of internship]",
   applicationDeadline: "[Application Deadline]",
   applicationInstructions: "Submit your resume, cover letter, and a proposal or strategic document sample (if available) to [Email Address] with the subject line 'Associate PA Intern Application - [Your Name]'. Complete applications only will be considered."
+},
+{
+  title: "UI/UX Designer Intern",
+  organization: "Educ8africa",
+  location: "Remote",
+  jobType: "Internship",
+  reportLine: "Lead UI/UX Designer",
+  description: "This role focuses on designing user-friendly interfaces and creating engaging user experiences for Educ8africa’s digital platforms. The intern will collaborate with cross-functional teams to enhance visual appeal, usability, and accessibility across various applications and web solutions.",
+  responsibilities: {
+      UserResearch: [
+          "Conduct user research to understand audience needs and preferences.",
+          "Analyze data from surveys, interviews, and usability tests.",
+          "Document user personas and journey maps to guide design decisions.",
+          "Stay informed about trends in user behavior and UI/UX best practices."
+      ],
+      DesignDevelopment: [
+          "Create wireframes, prototypes, and mockups for digital platforms.",
+          "Design intuitive interfaces that promote ease of navigation and accessibility.",
+          "Collaborate with developers to ensure design feasibility and integration.",
+          "Incorporate feedback from stakeholders to refine design iterations."
+      ],
+      UsabilityTesting: [
+          "Organize and conduct usability tests to gather feedback.",
+          "Analyze and present findings to optimize the user experience.",
+          "Continuously monitor and suggest improvements for user flows and designs.",
+          "Maintain documentation of testing procedures and results."
+      ],
+      VisualDesign: [
+          "Work on branding elements, typography, and color schemes.",
+          "Ensure consistency in design elements across all platforms.",
+          "Create engaging visuals and graphics for web and mobile applications.",
+          "Optimize images and icons for various screen resolutions and devices."
+      ],
+      Collaboration: [
+          "Work closely with the marketing, content, and development teams.",
+          "Participate in design critiques to provide and receive constructive feedback.",
+          "Communicate design decisions and rationale to team members and stakeholders.",
+          "Contribute to brainstorming sessions for new features and design updates."
+      ]
+  },
+  qualifications: [
+      "Currently pursuing a degree in UI/UX Design, Graphic Design, HCI, or a related field.",
+      "Proficiency in design software such as Figma, Adobe XD, or Sketch.",
+      "Basic knowledge of HTML/CSS and how design translates to development.",
+      "Strong attention to detail and creativity in problem-solving.",
+      "Excellent communication and collaboration skills.",
+      "Portfolio showcasing previous UI/UX projects (academic or personal) is a plus."
+  ],
+  skills: [
+      "User research and data analysis",
+      "Wireframing and prototyping",
+      "Visual design and layout principles",
+      "Usability testing and analysis",
+      "Responsive and mobile-first design",
+      "Typography and color theory",
+      "Team collaboration and communication"
+  ],
+  preferredQualifications: [
+      "Experience with animation and interactive design is a plus.",
+      "Knowledge of accessibility standards (WCAG) is an advantage.",
+      "Familiarity with responsive and adaptive design principles.",
+      "Experience using design systems and component libraries."
+  ],
+  desiredAttributes: [
+      "Curious and eager to learn from real-world UI/UX projects.",
+      "Adaptable to feedback and able to iterate quickly on designs.",
+      "Passionate about creating positive and inclusive user experiences.",
+      "Comfortable working in a fast-paced, remote team environment."
+  ],
+  benefits: [
+      "Hands-on experience in UI/UX design for real-world projects.",
+      "Opportunity to learn from experienced designers and developers.",
+      "Flexible remote work environment.",
+      "Portfolio development with impactful, mission-driven work.",
+      "Networking opportunities within the tech and design industries.",
+      "Certificate of internship completion.",
+      "Potential for a full-time offer based on performance."
+  ],
+  duration: "[Duration of internship]",
+  applicationDeadline: "[Application Deadline]",
+  applicationInstructions: "Submit your resume, cover letter, and portfolio to [Email Address] with the subject line 'UI/UX Designer Intern Application - [Your Name]'. Only complete applications will be reviewed."
 }
+
 
 
 
