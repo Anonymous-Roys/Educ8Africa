@@ -441,15 +441,251 @@ const jobs = [
         "Flexible hours and remote work opportunities."
     ],
     notes: "This is a freelance position, allowing for flexible work hours and the ability to work remotely."
+},
+ 
+{
+  title: "Social Media Intern",
+  organization: "Educ8africa",
+  location: "Remote",
+  description: "Assist in managing and growing Educ8africa’s presence across social media platforms through content creation, audience engagement, and performance analysis.",
+  responsibilities: {
+      ContentCreation: [
+          "Develop engaging content for social media platforms, including posts, stories, videos, and graphics.",
+          "Assist in creating and maintaining a content calendar that aligns with the organization’s goals and campaigns.",
+          "Create visually appealing and informative social media posts related to cybersecurity, education, and technology."
+      ],
+      AudienceEngagement: [
+          "Monitor social media platforms, responding to comments, messages, and inquiries in a timely manner.",
+          "Engage with followers to foster a sense of community and encourage interaction with Educ8africa’s content."
+      ],
+      CampaignManagement: [
+          "Assist in managing social media campaigns, ensuring consistent messaging and branding across all platforms.",
+          "Help with paid promotions and ads on platforms like Facebook, Instagram, LinkedIn, and Twitter."
+      ],
+      TrendsAndInnovations: [
+          "Stay updated on social media trends, tools, and features to keep Educ8africa’s social media presence fresh and engaging.",
+          "Recommend new ideas for improving social media engagement and visibility."
+      ],
+      Analytics: [
+          "Track and analyze the performance of social media posts and campaigns using tools like Google Analytics, Hootsuite, or native platform analytics.",
+          "Provide reports and insights on audience growth, engagement rates, and other relevant metrics."
+      ]
+  },
+  qualifications: [
+      "Proficiency in using social media platforms (Facebook, Instagram, Twitter, LinkedIn, etc.)",
+      "Strong writing and communication skills with a creative flair.",
+      "Ability to create visual content (graphics, short videos) using tools like Canva, Adobe Spark, or similar.",
+      "Basic understanding of social media analytics and marketing strategies.",
+      "Interest in cybersecurity and educational initiatives."
+  ],
+  skills: [
+      "Social media management and content creation",
+      "Audience engagement and community building",
+      "Creative writing and visual storytelling",
+      "Interest in digital marketing and cybersecurity"
+  ],
+  benefits: [
+      "Gain hands-on experience in social media management for an educational organization.",
+      "Opportunity to learn about cybersecurity and technology education.",
+      "Competitive salary and benefits package."
+  ],
+  duration: "[Duration of internship]",
+  applicationDeadline: "[Application Deadline]",
+  applicationInstructions: "Please submit your resume and a portfolio of your social media work to [Email Address]."
+}, 
+{
+  title: "Associate Programs Coordinator",
+  organization: "Educ8africa",
+  location: "Remote",
+  jobType: "Internship",
+  reportLine: "CEO",
+  description: "This role combines technical support, administrative duties, outreach activities, and business process automation for prospective students, ensuring the smooth operation of our prospective student programs.",
+  responsibilities: {
+      TechnicalSupport: [
+          "Troubleshoot and resolve technical issues faced by students in their labs and during classes.",
+          "Assist with setting up and maintaining lab environments, ensuring they are configured correctly for training sessions.",
+          "Provide guidance and answer technical questions from students on various software and hardware.",
+          "Update and maintain documentation related to technical procedures and troubleshooting guides.",
+          "Provide technical support for webinar events, including testing platforms and equipment, troubleshooting issues, assisting presenters, and monitoring chat and Q&A sections."
+      ],
+      ProgramAdministration: [
+          "Manage logistics for prospective student programs, including enrollment, scheduling, and resource allocation.",
+          "Develop and maintain accurate records and documentation for prospective student events and interactions.",
+          "Assist with the development and implementation of new outreach initiatives and programs.",
+          "Identify opportunities for business process automation within program operations.",
+          "Manage projects related to implementing automation solutions.",
+          "Monitor and report on program performance metrics related to prospective student engagement.",
+          "Analyze data and reports to identify areas for improvement in program effectiveness and outreach strategies."
+      ],
+      OutreachActivities: [
+          "Collaborate with the Associate Outreach Coordinator, marketing, and admissions teams to plan and execute engaging webinars, information sessions, and other outreach events for prospective students.",
+          "Assist in the development and distribution of promotional materials.",
+          "Create or assist with creating informative content, such as blog posts or social media content, for prospective students.",
+          "Answer inquiries from prospective students through various channels (phone, email, chat).",
+          "Support the Associate Outreach Coordinator in other outreach initiatives as needed."
+      ],
+      BusinessProcessAutomation: [
+          "Identify and document existing program processes.",
+          "Analyze processes for potential automation opportunities.",
+          "Research and recommend automation tools and technologies.",
+          "Assist with implementing automation solutions.",
+          "Monitor and evaluate the effectiveness of automation initiatives."
+      ],
+      ProjectManagement: [
+          "Manage small-scale projects related to program improvements or automation.",
+          "Develop project plans, timelines, and budgets.",
+          "Coordinate with stakeholders and team members.",
+          "Track project progress and address any issues."
+      ]
+  },
+  qualifications: [
+      "Pursuing or completed an undergraduate Bachelor's degree in IT, Computer Science, or a related field.",
+      "No experience in technical support needed.",
+      "Strong communication and interpersonal skills.",
+      "Excellent organizational and time management skills.",
+      "Proficient in using various IT software and hardware, including [list specific software and hardware relevant to your institution].",
+      "Experience working with diverse groups of people and creating a positive and welcoming environment.",
+      "Ability to work independently and as part of a team.",
+      "Passion for technology, education, and outreach.",
+      "Willingness to be an ongoing learner and stay updated on evolving technologies and educational trends.",
+      "Interest in or experience with business process automation.",
+      "Basic project management skills are a plus."
+  ],
+  skills: [
+      "Technical troubleshooting",
+      "Lab setup and maintenance",
+      "Documentation and reporting",
+      "Interpersonal communication",
+      "Business process analysis",
+      "Project coordination",
+      "Content creation for outreach",
+      "Time management and organization"
+  ],
+  preferredQualifications: [
+      "Interest in EdTech or student-focused technology environments",
+      "Experience in customer support or technical assistance roles",
+      "Familiarity with project management tools and automation software"
+  ],
+  desiredAttributes: [
+      "Motivated to contribute to a positive student experience",
+      "Adaptable to evolving technology and program needs",
+      "Enthusiastic about learning and applying new skills",
+      "Comfortable working in remote settings with diverse teams"
+  ],
+  benefits: [
+      "Hands-on experience in technical support and program coordination",
+      "Opportunities to learn about automation in program management",
+      "Potential for future employment based on performance",
+      "Flexible remote work arrangement",
+      "Networking and mentorship opportunities within the EdTech industry",
+      "Certificate of internship completion",
+      "Exposure to program administration and outreach best practices"
+  ],
+  duration: "[Duration of internship]",
+  applicationDeadline: "[Application Deadline]",
+  applicationInstructions: "Submit your resume and cover letter to [Email Address] with the subject line 'Associate Programs Coordinator Application - [Your Name]'. Complete applications only will be considered."
 }
-
-
-
-
-
-
-
-
+,
+{
+  title: "Associate Personal Assistant to the CEO",
+  organization: "Grow with Educ8africa, a subsidiary of Educ8africa",
+  location: "[City, State]",
+  description: "Gain hands-on experience in a dynamic EdTech environment by supporting senior leadership in efficient operations, strategic initiatives, and organizational communication. This role is ideal for detail-oriented individuals with strong communication skills, looking to develop their professional expertise.",
+  responsibilities: {
+    ExecutiveSupport: [
+      "Maintain and manage the CEO's calendar, scheduling and prioritizing appointments and meetings",
+      "Coordinate domestic and international travel plans, including booking flights, accommodation, and transportation",
+      "Support the preparation and submission of CEO expense reports",
+      "Manage and respond to phone calls, emails, and other communications on behalf of the CEO"
+    ],
+    CommunicationManagement: [
+      "Screen and prioritize incoming emails, draft responses, and ensure timely follow-up",
+      "Facilitate communication between the CEO and other departments or team members",
+      "Serve as a liaison between the CEO and external stakeholders, including clients, partners, and board members"
+    ],
+    MeetingCoordination: [
+      "Create and distribute agendas for meetings chaired by the CEO",
+      "Attend meetings, take detailed minutes, and track follow-up actions and deadlines",
+      "Organize internal and external events, including logistics and coordination"
+    ],
+    DocumentPreparation: [
+      "Draft, edit, and proofread reports, presentations, and other business documents",
+      "Maintain an organized filing system, both electronic and physical, for easy document retrieval",
+      "Prepare PowerPoint presentations and visual materials for meetings and conferences"
+    ],
+    ResearchAndAnalysis: [
+      "Conduct research on topics requested by the CEO, including market trends and industry developments",
+      "Gather and analyze data to provide actionable insights for strategic decisions",
+      "Summarize research findings in clear, concise reports for the CEO"
+    ],
+    ProposalWriting: [
+      "Draft and submit grant applications, ensuring requirements are met",
+      "Prepare comprehensive business proposals and strategic plans aligned with company goals",
+      "Review and edit proposal content for accuracy and clarity"
+    ],
+    ProjectManagement: [
+      "Support the planning and execution of CEO-led projects and initiatives",
+      "Track project timelines, deliverables, and milestones for timely completion",
+      "Assist in resource allocation and management for various projects"
+    ],
+    LiaisonRole: [
+      "Act as the primary contact between the CEO and key stakeholders, facilitating communication",
+      "Build and maintain strong relationships with internal and external partners"
+    ],
+    PersonalAssistance: [
+      "Manage personal appointments, errands, and other tasks for the CEO as required",
+      "Handle all personal and professional matters with discretion and confidentiality"
+    ]
+  },
+  qualifications: [
+    "Pursuing a Bachelor’s degree in Business Administration, Communications, English, or a related field",
+    "Excellent organizational and time-management skills",
+    "Strong written and verbal communication abilities",
+    "Proficient in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)",
+    "Ability to prioritize tasks and manage multiple projects simultaneously",
+    "Strong problem-solving skills and attention to detail",
+    "Ability to work independently and as part of a team",
+    "High degree of professionalism and emotional intelligence",
+    "Strong research skills with the ability to synthesize information and present it clearly",
+    "Basic experience or coursework in proposal writing and grant applications is a plus"
+  ],
+  skills: [
+    "Excellent organizational and time-management skills",
+    "Strong written and verbal communication abilities",
+    "Proficiency in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)",
+    "Ability to prioritize tasks and manage multiple projects simultaneously",
+    "Problem-solving skills and attention to detail",
+    "Professionalism and emotional intelligence",
+    "Research skills for synthesizing information clearly",
+    "Basic proposal writing and grant application experience"
+  ],
+  preferredQualifications: [
+    "Interest in the EdTech sector or a similar technology-driven environment",
+    "Familiarity with project management tools and software",
+    "Ability to adapt quickly to new technologies and systems"
+  ],
+  desiredAttributes: [
+    "Ability to craft clear and compelling written communications",
+    "Enthusiastic about acquiring new knowledge and skills, with a proactive approach to development",
+    "Capable of adapting to changing circumstances or unexpected challenges",
+    "Comfortable working in a fast-paced environment with tight deadlines, demonstrating resilience"
+  ],
+  benefits: [
+    "Access to training sessions, workshops, and certifications based on performance",
+    "Regular one-on-one mentoring sessions with senior leadership for career development",
+    "Attend industry conferences, webinars, and networking events",
+    "Hands-on experience with project management tools and software",
+    "Potential for future employment opportunities based on performance",
+    "Opportunity to work remotely and manage schedule around academic commitments",
+    "Contribute to impactful projects in the educational landscape",
+    "Learn essential skills like time management, communication, and leadership",
+    "Receive a certificate of internship completion and a detailed letter of recommendation",
+    "Work in a dynamic, inclusive, and supportive environment that encourages creativity"
+  ],
+  duration: "[Duration of internship]",
+  applicationDeadline: "[Application Deadline]",
+  applicationInstructions: "Submit your resume, cover letter, and a proposal or strategic document sample (if available) to [Email Address] with the subject line 'Associate PA Intern Application - [Your Name]'. Complete applications only will be considered."
+}
 
 
 
