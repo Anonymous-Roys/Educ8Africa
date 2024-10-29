@@ -494,7 +494,7 @@ const jobs = [
   applicationInstructions: "Please submit your resume and a portfolio of your social media work to [Email Address]."
 }, 
 {
-  title: "Associate Programs Coordinator",
+  title: "Programs Coordinator",
   organization: "Educ8africa",
   location: "Remote",
   jobType: "Internship",
@@ -583,11 +583,11 @@ const jobs = [
   ],
   duration: "[Duration of internship]",
   applicationDeadline: "[Application Deadline]",
-  applicationInstructions: "Submit your resume and cover letter to [Email Address] with the subject line 'Associate Programs Coordinator Application - [Your Name]'. Complete applications only will be considered."
+  applicationInstructions: "Submit your resume and cover letter to [Email Address] with the subject line ' Programs Coordinator Application - [Your Name]'. Complete applications only will be considered."
 }
 ,
 {
-  title: "Associate Personal Assistant to the CEO",
+  title: "Personal Assistant to the CEO",
   organization: "Grow with Educ8africa, a subsidiary of Educ8africa",
   location: "[City, State]",
   description: "Gain hands-on experience in a dynamic EdTech environment by supporting senior leadership in efficient operations, strategic initiatives, and organizational communication. This role is ideal for detail-oriented individuals with strong communication skills, looking to develop their professional expertise.",
