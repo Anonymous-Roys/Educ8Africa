@@ -30,7 +30,6 @@ const jobs = [
     benefits: [
       "Hands-on web development experience",
       "Learn about cybersecurity",
-      "Competitive salary package",
       "Remote work opportunity"
     ],
     duration: "[Duration of internship]",
@@ -120,8 +119,7 @@ const jobs = [
     ],
     benefits: [
       "Gain hands-on experience in video production and editing for an educational organization",
-      "Opportunity to learn about cybersecurity and its applications",
-      "Competitive salary and benefits package"
+      "Opportunity to learn about cybersecurity and its applications"
     ],
     duration: "[Duration of internship]",
     applicationDeadline: "[Application Deadline]",
@@ -171,7 +169,6 @@ const jobs = [
     ],
     applicationInstructions: "This internship provides an opportunity for a motivated student to gain practical experience in cybersecurity content strategy and contribute to a dynamic team."
   },
-
   {
     title: "Associate Outreach Lead (Cybersecurity Internship)",
     organization: "[Company Name]",
@@ -210,7 +207,6 @@ const jobs = [
       "Marketing and promotion"
     ],
     benefits: [
-      "Competitive salary or commission structure",
       "Opportunity to lead a team and develop leadership skills",
       "Networking opportunities with industry professionals",
       "Flexibility to work remotely"
@@ -308,8 +304,7 @@ const jobs = [
     ],
     benefits: [
       "Gain hands-on experience in community management and social media",
-      "Opportunity to learn about the cybersecurity industry",
-      "Competitive salary and benefits package"
+      "Opportunity to learn about the cybersecurity industry"
     ],
     duration: "[Duration of Internship]",
     applicationDeadline: "[Application Deadline]",
@@ -356,8 +351,7 @@ const jobs = [
     ],
     benefits: [
       "Gain valuable experience in graphic design for an educational organization",
-      "Opportunity to learn about cybersecurity and its applications",
-      "Competitive salary and benefits package"
+      "Opportunity to learn about cybersecurity and its applications"
     ],
     duration: "[Duration of Internship]",
     applicationDeadline: "[Application Deadline]",
@@ -486,8 +480,7 @@ const jobs = [
   ],
   benefits: [
       "Gain hands-on experience in social media management for an educational organization.",
-      "Opportunity to learn about cybersecurity and technology education.",
-      "Competitive salary and benefits package."
+      "Opportunity to learn about cybersecurity and technology education."
   ],
   duration: "[Duration of internship]",
   applicationDeadline: "[Application Deadline]",
@@ -767,10 +760,6 @@ const jobs = [
   applicationDeadline: "[Application Deadline]",
   applicationInstructions: "Submit your resume, cover letter, and portfolio to [Email Address] with the subject line 'UI/UX Designer Intern Application - [Your Name]'. Only complete applications will be reviewed."
 }
-
-
-
-
 ];
 
 
