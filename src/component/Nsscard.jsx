@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import JobCard from './JobCard';
-import { jobs } from '../data/jobs';
+import { jobs } from '../data/nssdata';
 import JobCardModal from './JobCardModal';
 import Modal from './Modal';
 import { FaThList, FaThLarge } from 'react-icons/fa'; // Import icons for the layout toggle
@@ -38,7 +38,7 @@ const JobBoard = ({ darkMode }) => {
       {/* Search Bar and Layout Toggle */}
       <div className="flex flex-col items-center justify-between mb-8 md:flex-row">
         <h1 className={`text-4xl font-bold text-red-700 mb-4`}>
-          Internship Openings
+          NSS Openings
         </h1>
         <div className="flex items-center space-x-4">
           <input
