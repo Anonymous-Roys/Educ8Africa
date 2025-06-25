@@ -1,5 +1,12 @@
 
+import { useState } from 'react';
+
 export default function  Nss() {
+    const [darkMode, setDarkMode] = useState(false);
+  
+    const toggleDarkMode = () => {
+      setDarkMode(!darkMode);
+    };
   return (
     <div className ="text-lg  flex-1 bg-red-500 h-screen ">
         <h1 className="text-3xl font-bold text-center text-white pt-20">NSS Page</h1>
