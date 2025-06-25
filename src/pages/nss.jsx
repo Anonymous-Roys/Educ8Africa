@@ -1,11 +1,5 @@
 
 import { useState } from 'react';
-import Navbar from '../component/Navbar';
-import LandingPage from '../component/LandingPage';
-import JobBoard from '../component/JobBoard';
-import AboutSection from '../component/About';
-import Footer from '../component/Footer';
-import NssCard from '../component/nsscard';
 
 export default function  Nss() {
     const [darkMode, setDarkMode] = useState(false);
