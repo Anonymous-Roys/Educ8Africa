@@ -27,14 +27,14 @@ Best regards,
       />
 
       {/* Modal container */}
-      <div className="min-h-screen px-4 text-center">
+      <div className="min-h-screen px-2 sm:px-4 text-center">
         <span className="inline-block h-screen align-middle" aria-hidden="true">
           &#8203;
         </span>
 
         {/* Modal panel */}
         <div className={`
-          inline-block w-full max-w-md p-6 my-4
+          inline-block w-full max-w-sm sm:max-w-md p-4 sm:p-6 my-4
           text-left align-middle transition-all duration-300
           transform shadow-2xl rounded-xl
           ${darkMode ? 'bg-gray-800 text-gray-100' : 'bg-white text-gray-900'}
@@ -43,8 +43,8 @@ Best regards,
           <button
             onClick={onClose}
             className={`
-              absolute top-4 right-4
-              p-2 rounded-full transition-all duration-200
+              absolute top-2 right-2 sm:top-4 sm:right-4
+              p-1 sm:p-2 rounded-full transition-all duration-200 text-lg sm:text-xl
               ${darkMode 
                 ? 'text-gray-400 hover:text-gray-200 hover:bg-gray-700' 
                 : 'text-gray-500 hover:text-gray-700 hover:bg-gray-100'
@@ -61,29 +61,29 @@ Best regards,
           </button>
 
           {/* Content */}
-          <div className="space-y-4">
-            <h2 className={`text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+          <div className="space-y-3 sm:space-y-4">
+            <h2 className={`text-lg sm:text-xl font-bold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
               Apply for {jobTitle}
             </h2>
             
-            <p className={`text-sm leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              If you are a motivated and enthusiastic individual looking to contribute to a thriving online 
-              community and gain valuable experience in the field of cybersecurity, we encourage you to apply. 
+            <p className={`text-xs sm:text-sm leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              If you are a motivated and enthusiastic individual looking to contribute to a thriving 
+              company and gain valuable experience in the field of cybersecurity, we encourage you to apply. 
               Please submit your resume and cover letter to{' '}
               <a 
                 href="mailto:careers@educ8africa.com" 
-                className="text-red-600 hover:text-red-700 underline"
+                className="text-red-600 hover:text-red-700 underline break-words"
               >
                 careers@educ8africa.com
               </a>.
             </p>
 
             {/* Action buttons */}
-            <div className="flex justify-end space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-3 pt-3 sm:pt-4 border-t border-gray-200 dark:border-gray-700">
               <button
                 onClick={onClose}
                 className={`
-                  px-4 py-2 rounded-md font-medium transition-colors
+                  w-full sm:w-auto px-3 sm:px-4 py-2 rounded-md font-medium transition-colors text-sm
                   ${darkMode 
                     ? 'bg-gray-700 text-gray-300 hover:bg-gray-600' 
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -94,7 +94,7 @@ Best regards,
               </button>
               <button
                 onClick={handleEmailRedirect}
-                className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors font-medium"
+                className="w-full sm:w-auto px-3 sm:px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors font-medium text-sm"
               >
                 Send Email
               </button>
