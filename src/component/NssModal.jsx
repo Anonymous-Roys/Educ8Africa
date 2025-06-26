@@ -1,28 +1,14 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import Modal from './Modal';
+import NssApplyCard from './NssApplyCard';
 import { FaMapMarkerAlt, FaBriefcase, FaUser, FaMoneyBillWave } from 'react-icons/fa';
 
-const NssModalContent = ({ posting, onApply }) => {
+const NssModalContent = ({ posting, darkMode }) => {
+  const [isApplyModalOpen, setIsApplyModalOpen] = useState(false);
+
   const handleApply = () => {
-    const emailSubject = `Application - ${posting.jobTitle}`;
-    const emailBody = `Dear Hiring Team,
-
-I am writing to apply for the position of ${posting.jobTitle}.
-
-[Please include:
-- Full Name
-- NSS Number
-- Contact Information
-- Educational Background (${posting.qualifications?.educationalBackground || 'As specified in requirements'})
-- Relevant Skills and Experience
-- Portfolio/Links (if applicable)
-- Motivation for applying]
-
-Best regards,
-[Your Name]`;
-
-    const mailtoLink = `mailto:careers@educ8africa.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-    window.location.href = mailtoLink;
+    setIsApplyModalOpen(true);
   };
 
   return (
@@ -93,13 +79,21 @@ Best regards,
           Apply Now
         </button>
       </div>
+
+      {/* Apply Modal */}
+      <NssApplyCard
+        isOpen={isApplyModalOpen}
+        onClose={() => setIsApplyModalOpen(false)}
+        jobTitle={posting.jobTitle}
+        darkMode={darkMode}
+      />
     </div>
   );
 };
 
 NssModalContent.propTypes = {
   posting: PropTypes.object.isRequired,
-  onApply: PropTypes.func
+  darkMode: PropTypes.bool
 };
 
 const NssModal = ({ isOpen, onClose, posting, darkMode }) => {
@@ -111,7 +105,7 @@ const NssModal = ({ isOpen, onClose, posting, darkMode }) => {
       size="large"
       title={posting.jobTitle}
     >
-      <NssModalContent posting={posting} />
+      <NssModalContent posting={posting} darkMode={darkMode} />
     </Modal>
   );
 };

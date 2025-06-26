@@ -18,7 +18,7 @@ const Nsscard = ({ jobTitle, department, location, roleOverview, onShowMore, dar
 
       <div className="flex justify-between w-full">
         <button
-          onClick={onShowMore} // Open modal with job details
+          onClick={onShowMore}
           className={`text-red-500 hover:text-red-600 font-medium ${darkMode ? 'text-red-400' : 'text-red-600'}`}
         > 
           Show More
