@@ -29,12 +29,15 @@ const NssBoard = ({ darkMode }) => {
 
   return (
     <div id="nsslist" className={`mt-4 max-w-7xl mx-auto py-6 sm:py-8 lg:py-12 px-2 sm:px-4 lg:px-6 transition-all duration-500 ${darkMode ? 'bg-gray-900 text-white' : ' text-gray-900'}`}>
-      {/* Search Bar and Layout Toggle */}
-      <div className="flex flex-col items-center justify-between mb-6 sm:mb-8 space-y-4 sm:space-y-0 sm:flex-row">
-        <h1 className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-red-700 mb-2 sm:mb-4 text-center sm:text-left`}>
+      {/* Header with Search Bar and Layout Toggle */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 sm:mb-8 space-y-4 sm:space-y-0">
+        {/* Section Header */}
+        <h1 className={`text-2xl sm:text-3xl lg:text-4xl font-bold text-red-700 text-center sm:text-left`}>
           NSS Openings
         </h1>
-        <div className="flex items-center space-x-2 sm:space-x-4 w-full sm:w-auto">
+        
+        {/* Search Bar and Layout Toggle */}
+        <div className="flex items-center space-x-2 sm:space-x-4 justify-center sm:justify-end w-full sm:w-auto">
           <input
             type="text"
             placeholder="Search for NSS positions..."
@@ -50,6 +53,28 @@ const NssBoard = ({ darkMode }) => {
           >
             {isGridView ? <FaThList className="text-red-600 text-sm sm:text-base" /> : <FaThLarge className="text-red-600 text-sm sm:text-base" />}
           </button>
+        </div>
+      </div>
+
+      {/* Intro Statement */}
+      <div className="max-w-4xl mx-auto text-center mb-6 sm:mb-8">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 text-red-600">
+          We Don't Do Idle Desks. We Build Africa's Digital Future.
+        </h2>
+        <div className="space-y-4 text-base sm:text-lg leading-relaxed">
+          <p className="font-semibold">
+            At Educ8Africa, National Service is not about coffee runs or clock-watching. It is a launchpad.
+            Here, you will work on real tech, real training, and real change — alongside a vibrant team pushing boundaries in cybersecurity, innovation, and youth empowerment.
+          </p>
+          <p className="font-semibold">
+            Your effort counts. Your ideas matter. Your growth is non-negotiable.
+          </p>
+          <p className="font-bold text-lg sm:text-xl">
+            So, if you are hungry to make an impact — and not just go on waakye runs — we want to hear from you.
+          </p>
+          <p className="font-bold text-lg sm:text-xl text-red-600">
+            👉 Join the team building Africa's digital future.
+          </p>
         </div>
       </div>
 
