@@ -58,6 +58,21 @@ const AboutSection = ({ darkMode }) => {
 
           {/* Right Column */}
           <div className="lg:w-2/3">
+            {/* Introduction Statement */}
+            <div className="mb-8 space-y-4">
+              <p className="text-lg leading-relaxed font-semibold">
+                Educ8Africa is a bold knowledge and skill transfer institution on a mission to bridge the gap between academic theory and industry relevance in Africa.
+                Through two powerful arms — our Core Operations and our CSR initiative, Grow with Educ8Africa — we equip Africa's youth with the requisite cybersecurity skills and global credentials needed to lead, protect, and innovate in the digital age.
+              </p>
+              <p className="text-lg leading-relaxed font-semibold">
+                Our National Service Program places graduates in high-impact roles across cybersecurity, tech training, media, and operations.
+                Our CSR arm, Grow with Educ8Africa, extends globally recognized cybersecurity certifications to students at subsidized rates, turning potential into job-ready power.
+              </p>
+              <p className="text-lg leading-relaxed font-bold">
+                From hands-on training to industry projects, we are not here to tick boxes — we are here to spark transformation. If you are serious about skills, relevance, and the future of Africa, Educ8Africa is where your journey begins.
+              </p>
+            </div>
+            
             <div className="space-y-8">
               {activeTab === 'mission' && (
                 <div className="space-y-6">
