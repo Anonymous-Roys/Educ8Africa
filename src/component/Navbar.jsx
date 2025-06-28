@@ -1,31 +1,37 @@
 import React, { useState, useEffect } from "react";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Sun, Menu, X } from "lucide-react";
 import { Logo } from "../data/img";
 import ProgressBar from "./ProgressBar";
+import AccessibleButton from "../components/common/AccessibleButton";
 
-// eslint-disable-next-line react/prop-types
-const Navbar = ({ darkMode, toggleDarkMode }) => {
+const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // State for mobile menu
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const navItems = [
+    { id: 'home', label: 'Home', href: '#home' },
+    { id: 'about', label: 'About', href: '#about' },
+    { id: 'jobboard', label: 'Job Board', href: '#jobboard' },
+    { id: 'nss', label: 'NSS Openings', href: '#nss' },
+    { id: 'contact', label: 'Contact', href: '#contact' }
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
-      setScrolled(offset > 50); // Set scrolled state
-      setMobileMenuOpen(false); // Close mobile menu on scroll
+      setScrolled(offset > 50);
+      setMobileMenuOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
     }
   };
 
@@ -33,26 +39,36 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300  
         ${scrolled ? "opacity-95 backdrop-blur-lg" : "opacity-100"}
-        ${darkMode ? "bg-gray-800/80" : "bg-white/80"} shadow-sm`}
+        ${darkMode ? "bg-gray-800/90" : "bg-white/90"} shadow-sm border-b ${
+          darkMode ? "border-gray-700" : "border-gray-200"
+        }`}
       style={{ backdropFilter: "blur(10px)" }}
     >
       <ProgressBar/>
       <div
-        className={`max-w-7xl mx-auto px-4 flex justify-between items-center transition-all duration-300 ${
+        className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center transition-all duration-300 ${
           scrolled ? "py-2" : "py-4"
         }`}
       >
-        {/* Animated Logo */}
-        <img
-          src={Logo}
-          alt="Educ8Africa Logo"
-          className={`h-12 cursor-pointer transition-transform duration-1000 ease-in-out ${
-            scrolled ? "animate-bounce" : ""
-          }`}
-          onClick={() => scrollToSection("#")} // Scroll to top
-        />
-
-       
+        {/* Enhanced Logo */}
+        <div className="flex items-center">
+          <img
+            src={Logo}
+            alt="Educ8Africa Logo"
+            className={`h-10 sm:h-12 cursor-pointer transition-all duration-300 ${
+              scrolled ? "h-8 sm:h-10" : ""
+            }`}
+            onClick={() => scrollToSection('#home')}
+          />
+          <span 
+            className={`ml-3 font-bold text-lg ${
+              darkMode ? 'text-white' : 'text-gray-900'
+            } hidden sm:block cursor-pointer`}
+            onClick={() => scrollToSection('#home')}
+          >
+            Educ8Africa
+          </span>
+        </div>
 
         <nav className={`hidden md:flex space-x-6`}>
           <a
@@ -78,6 +94,18 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             }}
           >
             About Us
+          </a>
+          <a
+            href="#contact"
+            className={`text-lg font-semibold ${
+              darkMode ? "text-gray-300" : "text-gray-700"
+            } hover:text-red-500 transition-colors cursor-pointer`}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#contact");
+            }}
+          >
+            Contact Us
           </a>
         </nav>
 
@@ -146,6 +174,19 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             }}
           >
             About Us
+          </a>
+          <a
+            href="#contact"
+            className={`block px-4 py-2 text-lg font-semibold ${
+              darkMode ? "text-gray-300" : "text-gray-700"
+            } hover:text-red-500 transition-colors cursor-pointer`}
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("#contact");
+              setMobileMenuOpen(false); // Close menu after selection
+            }}
+          >
+            Contact Us
           </a>
         </nav>
       )}

@@ -3,7 +3,7 @@ const jobPostings = [
       jobTitle: "Lead Associate Graphics Designer (National Service Personnel)",
       department: "Media and Communications",
       reportsTo: "Associate Media Lead",
-      location: "Hybrid (Mostly remote)",
+      location: "Hybrid (Mostly Remote)",
       jobType: "Full-time",
       compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
       company: {
@@ -117,7 +117,97 @@ const jobPostings = [
         jobTitle: "Associate Outreach Lead (National Service Personnel)",
         department: "Outreach",
         reportsTo: "CEO",
-        location: "Remote",
+        location: "Hybrid (Mostly Remote)",
+        jobType: "Full-time (National Service Posting)",
+        compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
+        company: {
+          name: "Grow With Educ8Africa",
+          description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
+        },
+        roleOverview: "As an Associate Outreach Lead (National Service Personnel), you will play a key leadership role in executing and overseeing campus-based outreach initiatives to promote Educ8Africa’s certification programs. You will coordinate outreach trainees, manage campus ambassadors, and collaborate with the social media team to ensure visibility and impact. This position reports directly to the CEO and serves as the primary liaison between the outreach team and leadership. You will also perform both sales and marketing responsibilities — creating awareness, generating student interest, and ensuring they move from interest to enrollment.",
+        keyResponsibilities: {
+          salesMarketing: [
+            "Perform both sales and marketing responsibilities to drive student enrollment",
+            "Develop and execute marketing initiatives that generate awareness and interest in Educ8Africa’s programs",
+            "Engage directly with prospective students to provide information, answer questions, and support their decision to enroll",
+            "Track conversion rates from interest to enrollment and refine approaches based on data",
+            "Collaborate with the social media and content teams for campaign alignment and outreach visibility"
+          ],
+          outreachStrategy: [
+            "Design and implement creative outreach strategies to generate student interest and engagement",
+            "Organize student-focused events such as webinars, EduTalks, and outreach drives",
+            "Represent Educ8Africa at academic fairs, job fairs, and student conferences (online or in-person)",
+            "Coordinate event logistics, support materials, and follow-ups",
+            "Share outreach highlights and upcoming event plans with the media team"
+          ],
+          ambassadorSupport: [
+            "Recruit, train, and manage campus ambassadors across universities",
+            "Supervise outreach trainees and other Outreach Associates, providing direction, mentorship, and assigning tasks",
+            "Conduct regular team check-ins and performance reviews to ensure outreach effectiveness"
+          ],
+          partnershipDevelopment: [
+            "Identify and reach out to active student associations in relevant IT departments across universities",
+            "Initiate communication and build relationships with association executives and faculty coordinators",
+            "Pitch Educ8Africa’s programs and propose mutually beneficial collaborations",
+            "Facilitate meetings and presentations to secure institutional interest"
+          ],
+          mouCoordination: [
+            "Lead the process of drafting and reviewing MoUs for association partnerships",
+            "Work with internal leadership to finalize partnership terms",
+            "Follow up with associations to ensure timely signing and execution of MoUs",
+            "Track signed MoUs and maintain a digital archive of all agreements"
+          ],
+          performanceTracking: [
+            "Monitor outreach metrics including student engagement, sign-ups, and ambassador activities",
+            "Prepare monthly outreach performance reports for the CEO",
+            "Use data insights to refine strategies, improve outreach impact, and increase enrollment"
+          ]
+        },
+        qualifications: {
+          educationalBackground: "Applicant must be a prospective National Service Personnel for the 2025/2026 service year with a degree in: IT / Cybersecurity / Computer Science / Computer Engineering / Telecom Engineering / Marketing / Business / Sociology / Communication",
+          coreCompetencies: [
+            "Proven leadership experience in student organizations, outreach, or team management",
+            "Strong communication, coordination, and problem-solving skills",
+            "Ability to manage multiple projects and lead remote teams effectively",
+            "Proficiency with basic reporting and digital productivity tools (MS Teams Workspace, Trello, etc.)",
+            "Passion for youth development, digital literacy, and cybersecurity education",
+            "Understanding of sales and marketing fundamentals"
+          ],
+          toolsPlatforms: [
+            "Familiarity with One Drive, Google Drive, Trello, Slack, Figma, or Notion",
+            "Ability to use cloud-based systems for task and file sharing"
+          ],
+          workRequirements: [
+            "Full-time remote/hybrid availability",
+            "Functional personal laptop and stable internet",
+            "Willingness for occasional weekend work or quick deadlines"
+          ]
+        },
+        teamStructure: {
+          leadOutreachCoordinatorResponsibilities: [
+            "Supervise all Outreach Trainees",
+            "Coordinate the work of Outreach Coordinators",
+            "Manage the national network of Educ8Africa Campus Ambassadors"
+          ]
+        },
+        benefits: [
+          "Strategic leadership experience working closely with the CEO",
+          "Hands-on outreach and project management training",
+          "Access to Educ8Africa’s certification programs and resources based on performance",
+          "Completion Certificate + Letter of Recommendation",
+          "Priority consideration for future full-time positions within Educ8Africa, its partners, or clients based on availability and performance"
+        ],
+        application: {
+          deadline: "Rolling basis (First come first served)",
+          instructions: "Send your CV and a one-page cover letter to careers@educ8africa.com",
+          subjectLine: "Application – National Service Associate Outreach Lead"
+        }
+    },
+    {
+        jobTitle: "Assistant Associate Outreach Lead (National Service Personnel)",
+        department: "Outreach",
+        reportsTo: "Associate Outreach Lead",
+        location: "Hybrid (Mostly Remote)",
         jobType: "Full-time (National Service Posting)",
         compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
         company: {
@@ -207,7 +297,7 @@ const jobPostings = [
         jobTitle: "Associate Partnership & Recruitment Lead (National Service Personnel)",
   department: "Partnership & Recruitment",
   reportsTo: "Chief Executive Officer (CEO)",
-  location: "Remote",
+  location: "Hybrid (Mostly Remote)",
   jobType: "Full-time (National Service Posting)",
   compensation: "National Service Allowance (as per national guidelines)",
   company: {
@@ -407,7 +497,7 @@ const jobPostings = [
         jobTitle: "Associate Training and Programmes Lead (National Service Personnel)",
   department: "Training and Programmes",
   reportsTo: "Chief Executive Officer (CEO)",
-  location: "Hybrid (mostly remote)",
+  location: "Hybrid (Mostly Remote)",
   jobType: "Full-time (National Service Posting)",
   compensation: "National Service Allowance (as per national guidelines)",
   company: {

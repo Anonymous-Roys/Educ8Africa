@@ -1,29 +1,76 @@
-import { useState } from 'react';
-import Navbar from '../component/Navbar';
+import { useState, useEffect } from 'react';
+import Navbar from '../component/Navbar_Enhanced';
 import LandingPage from '../component/LandingPage';
 import JobBoard from '../component/JobBoard';
 import NssBoard from '../component/NssBoard';
 import AboutSection from '../component/About';
+import ContactUs from './ContactUs_Enhanced';
 import Footer from '../component/Footer';
-
+import { ToastProvider } from '../context/ToastContext';
+import SkipNavigation from '../components/common/SkipNavigation';
+import ScrollToTop from '../components/common/ScrollToTop';
+import { useActiveSection, useLocalStorage } from '../hooks';
 
 function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  // Use localStorage to persist dark mode preference
+  const [darkMode, setDarkMode] = useLocalStorage('darkMode', false);
+  
+  // Track active section for navigation highlighting
+  const activeSection = useActiveSection(['home', 'about', 'jobboard', 'nss', 'contact']);
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
 
+  // Add smooth scrolling behavior and section IDs
+  useEffect(() => {
+    // Apply dark mode class to html element
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  }, [darkMode]);
+
   return (
-    
-    <div className={`min-h-screen ${darkMode ? ' bg-gray-900' : 'bg-gray-50'}`}>
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      <LandingPage darkMode={darkMode} />
-      <AboutSection darkMode={darkMode} />
-      <JobBoard darkMode={darkMode} />
-      <NssBoard darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
-    </div>
+    <ToastProvider darkMode={darkMode}>
+      <div className={`min-h-screen transition-colors duration-300 ${
+        darkMode ? 'bg-gray-900' : 'bg-gray-50'
+      }`}>
+        <SkipNavigation />
+        
+        <Navbar 
+          darkMode={darkMode} 
+          toggleDarkMode={toggleDarkMode}
+          activeSection={activeSection}
+        />
+        
+        <main id="main-content" className="pt-16 md:pt-20">
+          <section id="home">
+            <LandingPage darkMode={darkMode} />
+          </section>
+          
+          <section id="about" className="scroll-mt-20">
+            <AboutSection darkMode={darkMode} />
+          </section>
+          
+          <section id="jobboard" className="scroll-mt-20">
+            <JobBoard darkMode={darkMode} />
+          </section>
+          
+          <section id="nss" className="scroll-mt-20">
+            <NssBoard darkMode={darkMode} />
+          </section>
+          
+          <section id="contact" className="scroll-mt-20">
+            <ContactUs darkMode={darkMode} />
+          </section>
+        </main>
+        
+        <Footer darkMode={darkMode} />
+        <ScrollToTop darkMode={darkMode} />
+      </div>
+    </ToastProvider>
   );
 }
 
