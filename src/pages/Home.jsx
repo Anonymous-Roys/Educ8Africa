@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Navbar from '../component/Navbar';
 import LandingPage from '../component/LandingPage';
 import JobBoard from '../component/JobBoard';
-import NssBoard from '../component/NssBoard';
 import AboutSection from '../component/About';
 import Footer from '../component/Footer';
 
@@ -21,7 +20,6 @@ function Home() {
       <LandingPage darkMode={darkMode} />
       <AboutSection darkMode={darkMode} />
       <JobBoard darkMode={darkMode} />
-      <NssBoard darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
   );

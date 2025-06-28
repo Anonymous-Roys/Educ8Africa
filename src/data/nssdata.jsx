@@ -506,5 +506,4 @@ const jobPostings = [
   }
     }
   ];
-
-export { jobPostings };
+  
