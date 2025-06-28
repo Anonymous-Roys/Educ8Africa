@@ -48,7 +48,7 @@ const ContactUs = ({ darkMode }) => {
     {
       icon: Clock,
       title: 'Business Hours',
-      details: ['Monday - Friday: 9AM - 5PM', 'Saturday: 10AM - 2PM'],
+      details: ['Monday - Friday: 8AM - 5PM', 'Saturday: 10AM - 2PM'],
       color: 'text-purple-600'
     }
   ];
