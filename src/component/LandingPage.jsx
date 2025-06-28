@@ -30,14 +30,24 @@ const LandingPage = ({ darkMode }) => {
   }, []);
 
   const handleScroll = () => {
+    const navbarHeight = 70; // Updated to match navbar
+    const targetPosition = window.innerHeight - navbarHeight;
     window.scrollTo({
-      top: window.innerHeight,
+      top: targetPosition,
       behavior: 'smooth',
     });
   };
 
   const handleGetStarted = () => {
-    document.getElementById('jobboard')?.scrollIntoView({ behavior: 'smooth' });
+    const element = document.getElementById('jobboard');
+    if (element) {
+      const navbarHeight = 70; // Updated to match navbar
+      const elementPosition = element.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
+    }
   };
 
   const handleWatchDemo = () => {

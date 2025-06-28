@@ -36,7 +36,7 @@ const ContactUs = ({ darkMode }) => {
     {
       icon: Phone,
       title: 'Call Us',
-      details: ['+233 XX XXX XXXX', 'Mon-Fri 9AM-5PM GMT'],
+      details: [' +233 (0) 244 865 815 ', 'Mon-Fri 9AM-5PM GMT'],
       color: 'text-blue-600'
     },
     {

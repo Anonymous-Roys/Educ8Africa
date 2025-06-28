@@ -30,7 +30,14 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      // Calculate navbar height to offset scroll position
+      const navbarHeight = 70; // Reduced navbar height
+      const elementPosition = section.offsetTop - navbarHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth"
+      });
       setMobileMenuOpen(false);
     }
   };
@@ -47,7 +54,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
       <ProgressBar/>
       <div
         className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center transition-all duration-300 ${
-          scrolled ? "py-2" : "py-4"
+          scrolled ? "py-1" : "py-2"
         }`}
       >
         {/* Enhanced Logo */}
