@@ -7,7 +7,6 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem; /* Account for fixed navbar */
   }
   
   body {
@@ -37,18 +36,6 @@
 
   .text-muted {
     @apply text-gray-500 dark:text-gray-400;
-  }
-
-  .text-primary-dark {
-    @apply text-gray-900 dark:text-white;
-  }
-
-  .text-contrast {
-    @apply text-gray-700 dark:text-gray-200;
-  }
-
-  .text-high-contrast {
-    @apply text-gray-900 dark:text-gray-100;
   }
 
   .card {

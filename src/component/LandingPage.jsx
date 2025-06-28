@@ -30,29 +30,14 @@ const LandingPage = ({ darkMode }) => {
   }, []);
 
   const handleScroll = () => {
-    const aboutSection = document.getElementById('about');
-    if (aboutSection) {
-      const navbarHeight = 80;
-      const elementPosition = aboutSection.offsetTop - navbarHeight;
-      
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
   };
 
   const handleGetStarted = () => {
-    const jobboardSection = document.getElementById('jobboard');
-    if (jobboardSection) {
-      const navbarHeight = 80;
-      const elementPosition = jobboardSection.offsetTop - navbarHeight;
-      
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    document.getElementById('jobboard')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const handleWatchDemo = () => {

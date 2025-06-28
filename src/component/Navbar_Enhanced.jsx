@@ -30,13 +30,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
-      const navbarHeight = 80; // Account for navbar height
-      const elementPosition = section.offsetTop - navbarHeight;
-      
-      window.scrollTo({
-        top: elementPosition,
-        behavior: "smooth"
-      });
+      section.scrollIntoView({ behavior: "smooth" });
       setMobileMenuOpen(false);
     }
   };

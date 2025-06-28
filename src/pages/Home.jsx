@@ -45,24 +45,24 @@ function Home() {
           activeSection={activeSection}
         />
         
-        <main id="main-content" className="pt-16 md:pt-20">
+        <main id="main-content">
           <section id="home">
             <LandingPage darkMode={darkMode} />
           </section>
           
-          <section id="about" className="scroll-mt-20">
+          <section id="about">
             <AboutSection darkMode={darkMode} />
           </section>
           
-          <section id="jobboard" className="scroll-mt-20">
+          <section id="jobboard">
             <JobBoard darkMode={darkMode} />
           </section>
           
-          <section id="nss" className="scroll-mt-20">
+          <section id="nss">
             <NssBoard darkMode={darkMode} />
           </section>
           
-          <section id="contact" className="scroll-mt-20">
+          <section id="contact">
             <ContactUs darkMode={darkMode} />
           </section>
         </main>
