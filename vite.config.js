@@ -22,14 +22,24 @@ export default defineConfig({
     sourcemap: false,
     // Optimize chunk size
     chunkSizeWarningLimit: 1000,
-    // Enable compression
+    // Enable compression with Terser
     minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
-        drop_debugger: true
+        drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug']
+      },
+      mangle: {
+        safari10: true
+      },
+      format: {
+        comments: false
       }
-    }
+    },
+    // Fallback configuration
+    target: 'es2015',
+    cssCodeSplit: true
   },
   // Optimize dev server
   server: {
