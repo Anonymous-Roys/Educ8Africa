@@ -1,19 +1,34 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home'
-import ErrorPage from './pages/ErrorPage';
-import './App.css'
-import Nss from './pages/nss';
+import { Suspense, lazy } from 'react';
+import LoadingSpinner from './components/LoadingSpinner';
+import ErrorBoundary from './components/ErrorBoundary';
+import './App.css';
+
+// Lazy load components for better performance
+const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
+const Jobs = lazy(() => import('./pages/Jobs'));
+const NSS = lazy(() => import('./pages/nss'));
+const Contact = lazy(() => import('./pages/Contact'));
+const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" exact element={<Home/>} />
-        <Route path = "/nss" element ={<Nss/>}/>
-        {/* Add more routes for other components */}
-        <Route path="*" element={<ErrorPage/>} /> {/* Catch-all route for errors */}
-      </Routes>
-    </Router>
+    <ErrorBoundary>
+      <Router>
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" exact element={<Home/>} />
+            <Route path="/about" element={<About/>} />
+            <Route path="/jobs" element={<Jobs/>} />
+            <Route path="/nss" element={<NSS/>} />
+            <Route path="/contact" element={<Contact/>} />
+            {/* Catch-all route for errors */}
+            <Route path="*" element={<ErrorPage/>} />
+          </Routes>
+        </Suspense>
+      </Router>
+    </ErrorBoundary>
   );
 }
 

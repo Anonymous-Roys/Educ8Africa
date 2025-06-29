@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
 
 const ContactUs = ({ darkMode }) => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -179,15 +181,24 @@ Sent from Educ8Africa Contact Form
             <div className={`rounded-lg p-6 sm:p-8 shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
               <h2 className="text-2xl font-bold text-red-700 mb-6">Quick Links</h2>
               <div className="space-y-3">
-                <a href="#jobboard" className="block text-red-600 hover:text-red-700 font-medium transition-colors">
-                  → View Job Opportunities
-                </a>
-                <a href="#nsslist" className="block text-red-600 hover:text-red-700 font-medium transition-colors">
+                <button 
+                  onClick={() => navigate('/jobs')}
+                  className="block text-red-600 hover:text-red-700 font-medium transition-colors text-left"
+                >
+                  → View Internship Opportunities
+                </button>
+                <button 
+                  onClick={() => navigate('/nss')}
+                  className="block text-red-600 hover:text-red-700 font-medium transition-colors text-left"
+                >
                   → NSS Positions
-                </a>
-                <a href="#about" className="block text-red-600 hover:text-red-700 font-medium transition-colors">
+                </button>
+                <button 
+                  onClick={() => navigate('/about')}
+                  className="block text-red-600 hover:text-red-700 font-medium transition-colors text-left"
+                >
                   → About Educ8Africa
-                </a>
+                </button>
               </div>
             </div>
           </div>

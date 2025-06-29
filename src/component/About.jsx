@@ -39,14 +39,20 @@ const AboutSection = ({ darkMode }) => {
           {/* Main About Content - Now comes first */}
           <div className="mb-16">
             <div className="max-w-4xl mx-auto text-center space-y-6">
-              <h3 className="text-3xl font-bold mb-6">
+              <h3 className={`text-3xl font-bold mb-6 ${
+                darkMode ? 'text-white' : 'text-gray-900'
+              }`}>
                 Transforming Africa's Cybersecurity Landscape
               </h3>
-              <p className="text-lg leading-relaxed font-semibold">
+              <p className={`text-lg leading-relaxed font-semibold ${
+                darkMode ? 'text-gray-300' : 'text-gray-600'
+              }`}>
                 Educ8Africa is a bold knowledge and skill transfer institution on a mission to bridge the gap between academic theory and industry relevance in Africa.
                 Through two powerful arms — our Core Operations and our CSR initiative, Grow with Educ8Africa — we equip Africa's youth with the requisite cybersecurity skills and global credentials needed to lead, protect, and innovate in the digital age.
               </p>
-              <p className="text-lg leading-relaxed font-semibold">
+              <p className={`text-lg leading-relaxed font-semibold ${
+                darkMode ? 'text-gray-300' : 'text-gray-600'
+              }`}>
                 Our National Service Program places graduates in high-impact roles across cybersecurity, tech training, media, and operations.
                 Our CSR arm, Grow with Educ8Africa, extends globally recognized cybersecurity certifications to students at subsidized rates, turning potential into job-ready power.
               </p>
@@ -84,12 +90,18 @@ const AboutSection = ({ darkMode }) => {
               <div className="space-y-8">
                 {activeTab === 'mission' && (
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-bold mb-4">Empowering Africa's Cybersecurity Future</h3>
-                    <p className="text-lg leading-relaxed">
+                    <h3 className={`text-2xl font-bold mb-4 ${
+                      darkMode ? 'text-white' : 'text-gray-900'
+                    }`}>Empowering Africa's Cybersecurity Future</h3>
+                    <p className={`text-lg leading-relaxed ${
+                      darkMode ? 'text-gray-300' : 'text-gray-600'
+                    }`}>
                       At Educ8Africa, our mission is to bridge the cybersecurity skills gap across Africa by providing world-class training and certification programs. We empower individuals to protect digital infrastructures and build resilient cyber ecosystems.
                     </p>
                     <div className={`bg-gradient-to-br ${!darkMode ? 'from-red-50 to-gray-50' : "dark:from-gray-800 dark:to-gray-900"} p-6 rounded-xl`}>
-                      <h4 className="text-xl font-semibold mb-4">Our Growing Impact</h4>
+                      <h4 className={`text-xl font-semibold mb-4 ${
+                        darkMode ? 'text-white' : 'text-gray-900'
+                      }`}>Our Growing Impact</h4>
                       <ResponsiveContainer width="100%" height={200}>
                         <LineChart data={studentData}>
                           <XAxis dataKey="name" stroke={darkMode ? "#fff" : "#000"} />
@@ -107,12 +119,18 @@ const AboutSection = ({ darkMode }) => {
 
                 {activeTab === 'vision' && (
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-bold mb-4">Shaping Africa's Digital Defense</h3>
-                    <p className="text-lg leading-relaxed">
+                    <h3 className={`text-2xl font-bold mb-4 ${
+                      darkMode ? 'text-white' : 'text-gray-900'
+                    }`}>Shaping Africa's Digital Defense</h3>
+                    <p className={`text-lg leading-relaxed ${
+                      darkMode ? 'text-gray-300' : 'text-gray-600'
+                    }`}>
                       We envision Africa as a global hub for cybersecurity excellence, where every organization has access to skilled professionals capable of defending against evolving digital threats. By 2025, we aim to train 100,000 cybersecurity professionals across the continent.
                     </p>
                     <div className={`bg-gradient-to-br ${!darkMode ? 'from-red-50 to-gray-50' : "dark:from-gray-800 dark:to-gray-900"} p-6 rounded-xl`}>
-                      <h4 className="text-xl font-semibold mb-4">Skill Level Growth</h4>
+                      <h4 className={`text-xl font-semibold mb-4 ${
+                        darkMode ? 'text-white' : 'text-gray-900'
+                      }`}>Skill Level Growth</h4>
                       <ResponsiveContainer width="100%" height={300}>
                         <BarChart data={impactData}>
                           <XAxis dataKey="name" stroke={darkMode ? "#fff" : "#000"} />

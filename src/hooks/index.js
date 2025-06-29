@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 
+// Re-export performance hooks
+export * from './usePerformance';
+
 // Custom hook for intersection observer
 export const useIntersectionObserver = (options = {}) => {
   const [isIntersecting, setIsIntersecting] = useState(false);

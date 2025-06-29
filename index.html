@@ -2,12 +2,136 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Educ8africa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Educ8Africa - Cybersecurity Training & Education Platform</title>
+    <meta name="title" content="Educ8Africa - Cybersecurity Training & Education Platform" />
+    <meta name="description" content="Transform your cybersecurity career with Educ8Africa. Access industry-relevant training, internship opportunities, and professional development programs across Africa." />
+    <meta name="keywords" content="cybersecurity training, Africa, internships, National Service Program, tech education, digital transformation, career development" />
+    <meta name="author" content="Educ8Africa" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://educ8africa.com/" />
+    <meta property="og:title" content="Educ8Africa - Cybersecurity Training & Education Platform" />
+    <meta property="og:description" content="Transform your cybersecurity career with Educ8Africa. Access industry-relevant training, internship opportunities, and professional development programs across Africa." />
+    <meta property="og:image" content="/src/assets/landingBG.png" />
+    <meta property="og:site_name" content="Educ8Africa" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://educ8africa.com/" />
+    <meta property="twitter:title" content="Educ8Africa - Cybersecurity Training & Education Platform" />
+    <meta property="twitter:description" content="Transform your cybersecurity career with Educ8Africa. Access industry-relevant training, internship opportunities, and professional development programs across Africa." />
+    <meta property="twitter:image" content="/src/assets/landingBG.png" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/assets/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/assets/logo.png" />
+    <link rel="apple-touch-icon" href="/src/assets/logo.png" />
+    
+    <!-- Theme and Performance -->
+    <meta name="theme-color" content="#dc2626" />
+    <meta name="msapplication-TileColor" content="#dc2626" />
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Critical resource hints -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Educ8Africa",
+      "description": "Transform your cybersecurity career with Educ8Africa. Access industry-relevant training, internship opportunities, and professional development programs across Africa.",
+      "url": "https://educ8africa.com",
+      "logo": "/src/assets/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/educ8africa",
+        "https://twitter.com/educ8africa",
+        "https://www.facebook.com/educ8africa"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "category": "Education",
+        "description": "Cybersecurity training and internship programs"
+      }
+    }
+    </script>
+    
+    <!-- Critical CSS inlined for faster first paint -->
+    <style>
+      /* Critical above-the-fold styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: #f9fafb;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      /* Loading spinner for initial load */
+      .loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #dc2626;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+      
+      /* Hide loading spinner when content loads */
+      .loaded .loading-spinner {
+        display: none;
+      }
+    </style>
   </head>
   <body>
+    <!-- Loading spinner -->
+    <div class="loading-spinner" id="loading-spinner"></div>
+    
+    <!-- Main app -->
     <div id="root"></div>
+    
+    <!-- Scripts -->
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Hide loading spinner when page loads -->
+    <script>
+      window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+        const spinner = document.getElementById('loading-spinner');
+        if (spinner) {
+          setTimeout(() => spinner.remove(), 500);
+        }
+      });
+    </script>
   </body>
 </html>

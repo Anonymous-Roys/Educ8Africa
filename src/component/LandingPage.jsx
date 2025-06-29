@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { LandingBg } from '../data/img';
 import { ChevronDown, ArrowRight, Play } from 'lucide-react';
 import AnimatedCounter from '../components/common/AnimatedCounter';
@@ -9,6 +10,7 @@ const LandingPage = ({ darkMode }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [statsRef, statsInView] = useIntersectionObserver({ threshold: 0.3 });
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScrollAnimation = () => {
@@ -39,20 +41,11 @@ const LandingPage = ({ darkMode }) => {
   };
 
   const handleGetStarted = () => {
-    const element = document.getElementById('jobboard');
-    if (element) {
-      const navbarHeight = 70; // Updated to match navbar
-      const elementPosition = element.offsetTop - navbarHeight;
-      window.scrollTo({
-        top: elementPosition,
-        behavior: 'smooth'
-      });
-    }
+    navigate('/jobs');
   };
 
-  const handleWatchDemo = () => {
-    // Add demo video functionality here
-    console.log('Opening demo video...');
+  const handleLearnMore = () => {
+    navigate('/about');
   };
 
   return (
@@ -142,7 +135,7 @@ const LandingPage = ({ darkMode }) => {
               </AccessibleButton>
 
               <AccessibleButton
-                onClick={handleWatchDemo}
+                onClick={handleLearnMore}
                 variant="secondary"
                 size="large"
                 className={`group ${
@@ -150,10 +143,10 @@ const LandingPage = ({ darkMode }) => {
                     ? 'bg-white/10 text-white border-white/30 hover:bg-white/20' 
                     : 'bg-white/10 text-white border-white/30 hover:bg-white/20'
                 } backdrop-blur-sm`}
-                ariaLabel="Watch demo video"
+                ariaLabel="Learn more about Educ8Africa"
               >
-                <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
-                Watch Demo
+                <ArrowRight className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
+                Learn More
               </AccessibleButton>
             </div>
 

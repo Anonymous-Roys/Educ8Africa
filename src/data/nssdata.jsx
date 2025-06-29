@@ -597,4 +597,4 @@ const jobPostings = [
     }
   ];
 
-export { jobPostings };
+export { jobPostings as internshipPostings };

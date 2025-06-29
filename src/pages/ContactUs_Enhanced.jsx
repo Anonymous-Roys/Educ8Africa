@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, AlertCircle, User, MessageCircle } from 'lucide-react';
 import AccessibleButton from '../components/common/AccessibleButton';
 import { useToast } from '../context/ToastContext';
 
 const ContactUs = ({ darkMode }) => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -17,7 +19,7 @@ const ContactUs = ({ darkMode }) => {
   const { success, error } = useToast();
 
   const subjectOptions = [
-    { value: 'careers', label: 'Career Opportunities', email: 'careers@educ8africa.com' },
+    { value: 'careers', label: 'Internship Opportunities', email: 'careers@educ8africa.com' },
     { value: 'nss', label: 'National Service Applications', email: 'careers@educ8africa.com' },
     { value: 'partnerships', label: 'Partnerships & Collaborations', email: 'partnerships@educ8africa.com' },
     { value: 'programs', label: 'Training Programs', email: 'info@educ8africa.com' },
@@ -240,15 +242,15 @@ This message was sent via the Educ8Africa contact form.`;
               </h4>
               <div className="space-y-3">
                 <AccessibleButton
-                  onClick={() => window.location.href = '#jobboard'}
+                  onClick={() => navigate('/jobs')}
                   variant="outline"
                   size="small"
                   className="w-full justify-start"
                 >
-                  Browse Job Opportunities
+                  Browse Internship Opportunities
                 </AccessibleButton>
                 <AccessibleButton
-                  onClick={() => window.location.href = '#nss'}
+                  onClick={() => navigate('/nss')}
                   variant="outline"
                   size="small"
                   className="w-full justify-start"

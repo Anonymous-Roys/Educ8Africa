@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "../data/img";
 import ProgressBar from "./ProgressBar";
 import AccessibleButton from "../components/common/AccessibleButton";
@@ -7,13 +8,15 @@ import AccessibleButton from "../components/common/AccessibleButton";
 const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navItems = [
-    { id: 'home', label: 'Home', href: '#home' },
-    { id: 'about', label: 'About Us', href: '#about' },
-    { id: 'jobboard', label: 'Joblist', href: '#jobboard' },
-    { id: 'nss', label: 'NSS Openings', href: '#nss' },
-    { id: 'contact', label: 'Contact Us', href: '#contact' }
+    { id: 'home', label: 'Home', route: '/', href: '#home' },
+    { id: 'about', label: 'About Us', route: '/about', href: '#about' },
+    { id: 'jobboard', label: 'Internship Program', route: '/jobs', href: '#jobboard' },
+    { id: 'nss', label: 'NSS Program', route: '/nss', href: '#nss' },
+    { id: 'contact', label: 'Contact Us', route: '/contact', href: '#contact' }
   ];
 
   useEffect(() => {
@@ -27,6 +30,25 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isHomePage = location.pathname === '/';
+
+  const handleNavigation = (item) => {
+    // Always navigate to separate pages for all sections except home scroll
+    if (item.id === 'home') {
+      if (isHomePage) {
+        // If we're on home page, scroll to top
+        scrollToSection('#home');
+      } else {
+        // If we're on a different page, navigate to home
+        navigate('/');
+      }
+    } else {
+      // For all other sections, navigate to their respective pages
+      navigate(item.route);
+    }
+    setMobileMenuOpen(false);
+  };
+
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
@@ -38,9 +60,35 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
         top: elementPosition,
         behavior: "smooth"
       });
-      setMobileMenuOpen(false);
     }
   };
+
+  const handleLogoClick = () => {
+    if (isHomePage) {
+      scrollToSection('#home');
+    } else {
+      navigate('/');
+    }
+  };
+
+  // Determine active section based on current route
+  const getCurrentActiveSection = () => {
+    if (isHomePage) {
+      return activeSection;
+    }
+    
+    // Map routes to section IDs
+    const routeToSection = {
+      '/about': 'about',
+      '/jobs': 'jobboard', 
+      '/nss': 'nss',
+      '/contact': 'contact'
+    };
+    
+    return routeToSection[location.pathname] || 'home';
+  };
+
+  const currentActiveSection = getCurrentActiveSection();
 
   return (
     <header
@@ -62,16 +110,16 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
           <img
             src={Logo}
             alt="Educ8Africa Logo"
-            className={`h-10 sm:h-12 cursor-pointer transition-all duration-300 ${
-              scrolled ? "h-8 sm:h-10" : ""
+            className={`h-12 sm:h-16 cursor-pointer transition-all duration-300 ${
+              scrolled ? "h-10 sm:h-12" : ""
             }`}
-            onClick={() => scrollToSection('#home')}
+            onClick={handleLogoClick}
           />
           <span 
-            className={`ml-3 font-bold text-lg ${
+            className={`ml-3 font-bold text-xl ${
               darkMode ? 'text-white' : 'text-gray-900'
             } hidden sm:block cursor-pointer`}
-            onClick={() => scrollToSection('#home')}
+            onClick={handleLogoClick}
           >
             Educ8Africa
           </span>
@@ -80,11 +128,10 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
-            <a
+            <button
               key={item.id}
-              href={item.href}
               className={`text-base font-medium transition-all duration-200 cursor-pointer relative group ${
-                activeSection === item.id
+                currentActiveSection === item.id
                   ? darkMode 
                     ? "text-red-400" 
                     : "text-red-600"
@@ -92,17 +139,14 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
                     ? "text-gray-300 hover:text-white" 
                     : "text-gray-700 hover:text-gray-900"
               }`}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(item.href);
-              }}
+              onClick={() => handleNavigation(item)}
             >
               {item.label}
               {/* Active indicator */}
               <span className={`absolute -bottom-1 left-0 w-full h-0.5 bg-red-600 transform transition-transform duration-200 ${
-                activeSection === item.id ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+                currentActiveSection === item.id ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
               }`} />
-            </a>
+            </button>
           ))}
         </nav>
 
@@ -155,11 +199,10 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
         } border-t`}>
           <div className="px-4 py-6 space-y-4">
             {navItems.map((item) => (
-              <a
+              <button
                 key={item.id}
-                href={item.href}
-                className={`block text-base font-medium transition-colors cursor-pointer ${
-                  activeSection === item.id
+                className={`block w-full text-left text-base font-medium transition-colors cursor-pointer ${
+                  currentActiveSection === item.id
                     ? darkMode 
                       ? "text-red-400" 
                       : "text-red-600"
@@ -167,13 +210,10 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
                       ? "text-gray-300 hover:text-white" 
                       : "text-gray-700 hover:text-gray-900"
                 }`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(item.href);
-                }}
+                onClick={() => handleNavigation(item)}
               >
                 {item.label}
-              </a>
+              </button>
             ))}
           </div>
         </div>

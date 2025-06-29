@@ -43,7 +43,7 @@ const JobBoard = ({ darkMode }) => {
         <div className="flex items-center space-x-2 sm:space-x-4 w-full sm:w-auto">
           <input
             type="text"
-            placeholder="Search for jobs..."
+            placeholder="Search for internships..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className={`flex-1 sm:w-64 lg:w-80 border-2 border-gray-300 p-2 sm:p-3 rounded-lg outline-none focus:border-red-600 text-sm sm:text-base ${darkMode ? 'bg-gray-800 text-white placeholder-gray-400' : 'bg-white text-gray-900 placeholder-gray-500'}`}
@@ -73,7 +73,7 @@ const JobBoard = ({ darkMode }) => {
           ))
         ) : (
           <div className="col-span-full text-center py-8 sm:py-12">
-            <p className="text-red-500 text-sm sm:text-base">No jobs found.</p>
+            <p className="text-red-500 text-sm sm:text-base">No internships found.</p>
           </div>
         )}
       </div>
