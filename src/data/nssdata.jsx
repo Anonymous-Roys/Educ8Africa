@@ -594,6 +594,104 @@ const jobPostings = [
       "Send your CV and a brief cover letter to careers@educ8africa.com",
     subjectLine: "Application – National Service, Associate Training and Programmes Lead"
   }
+    },
+    {
+      jobTitle: "Associate Technical Writer and Research Lead (National Service Personnel)",
+      department: "Technical Writing and Research",
+      reportsTo: "CEO",
+      location: "Remote / Hybrid (Ghana)",
+      jobType: "Full-time (National Service Posting)",
+      compensation: "Monthly National Service Allowance",
+      company: {
+        name: "Grow With Educ8Africa",
+        description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa - a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa's future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy."
+      },
+      roleOverview: "The Associate Technical Writer and Research Lead (National Service Personnel) plays a pivotal role in bridging the gap between Educ8Africa's research team and media/communications team. This role involves developing technically accurate, well-researched, and engaging educational content that supports our cybersecurity training programs. Working closely with subject matter experts, media creatives, and the CEO, the Lead will be responsible for content that powers our blog, social media, resource banks, and student learning platforms. This role is ideal for a cybersecurity-inclined writer with a passion for research, content creation, and strategic storytelling that educates and inspires Africa's next generation of cybersecurity professionals.",
+      keyResponsibilities: {
+        researchAndAnalysis: [
+          "Conduct in-depth research on cybersecurity trends, news, and emerging technologies",
+          "Identify and analyze threats, vulnerabilities, compliance standards, and industry best practices",
+          "Curate free cybersecurity resources, including tools, online courses, certification platforms, and open-source datasets",
+          "Monitor global developments in cybersecurity education and training",
+          "Track government and industry regulatory updates (e.g., Data Protection Acts, GDPR equivalents) to guide content direction and compliance",
+          "Analyze student behavior and content engagement metrics to guide future research focus areas"
+        ],
+        contentDevelopmentAndWriting: [
+          "Write in-depth, SEO-friendly blog articles covering topics like data privacy, threat intelligence, cloud security, and ethical hacking",
+          "Develop technical explainers, FAQs, and guides based on Educ8Africa training modules",
+          "Translate complex cybersecurity concepts into clear, digestible content for university students and entry-level professionals",
+          "Collaborate with video, design, and social media teams to ensure technical accuracy and consistency in published content",
+          "Lead the creation of reusable content templates, glossaries, and writing guides for cybersecurity topics",
+          "Create script drafts for explainer videos, interviews, and short educational reels based on technical research",
+          "Develop FAQs and microlearning content for students based on common cybersecurity questions or program feedback"
+        ],
+        contentStrategyAndCoordination: [
+          "Maintain and update a structured editorial and research calendar",
+          "Work with Media and Program teams to align content with campaigns, student milestones, and cybersecurity awareness themes",
+          "Participate in regular review sessions to assess content performance and make strategic improvements",
+          "Ensure adherence to brand voice, tone, and ethical standards across all technical outputs",
+          "Facilitate weekly sync-ups between Research and Media teams to ensure unified messaging across content types",
+          "Own the documentation and version control process for all long-form technical content"
+        ],
+        knowledgeSharingAndCommunityEngagement: [
+          "Provide research support for webinars, infographics, and live campaigns",
+          "Support cybersecurity awareness initiatives by developing short-form research insights for social media and email newsletters",
+          "Mentor and support interns within the research and writing unit",
+          "Attend weekly content strategy syncs with media and outreach teams",
+          "Deliver micro-training or knowledge share sessions to interns and team members on cybersecurity content development",
+          "Represent the Technical Writing and Research team in cross-functional meetings for campaign planning, webinars, and program launches"
+        ],
+        collaborationAndQA: [
+          "Review and approve research submissions from interns for accuracy and clarity",
+          "Serve as the final quality checkpoint for technical information before public distribution",
+          "Liaise with cybersecurity trainers and external experts to validate technical content before release"
+        ]
+      },
+      qualifications: {
+        educationalBackground: "Currently enrolled in or recently graduated from a program in Cybersecurity, Information Technology, Computer Science, or a related field",
+        coreCompetencies: [
+          "Excellent technical writing and research skills",
+          "Passion for cybersecurity and digital safety",
+          "Familiarity with global cybersecurity certifications and frameworks (e.g., Sec+, CEH, SOC, CHFI, ISO 27001, CISSP basics)",
+          "Basic knowledge of SEO principles and blog optimization",
+          "Strong organizational and project coordination skills",
+          "Experience with platforms like Teams workspace, google workspace is a plus"
+        ],
+        toolsPlatforms: [
+          "Familiarity with collaborative tools like Teams Workspace, Slack, or Notion is a plus",
+          "Ability to use cloud-based systems for task and file sharing is desirable"
+        ],
+        workRequirements: [
+          "Must be able to commit to full-time remote/hybrid work",
+          "A functioning personal laptop and stable internet access are required",
+          "Availability for occasional weekend work or quick turnaround deadlines when needed"
+        ]
+      },
+      skills: [
+        "Technical writing and research",
+        "Cybersecurity knowledge and passion",
+        "SEO principles and blog optimization",
+        "Project coordination and organization",
+        "Content strategy and editorial planning",
+        "Cross-functional collaboration and communication"
+      ],
+      teamStructure: {
+        reportsTo: "CEO",
+        collaboratesWith: "Media and Communications Team, Program and Outreach Team, Interns and junior research assistants"
+      },
+      benefits: [
+        "Direct mentorship from the CEO and exposure to real-world cybersecurity research",
+        "Certificate of Service and Recommendation Letter upon successful completion",
+        "Leadership opportunity within a strategic content role",
+        "Access to world-class cybersecurity resources and expert contributors",
+        "Hands-on experience in bridging technical accuracy and public engagement",
+        "Strong performance may lead to priority consideration for future full-time roles within Educ8Africa, its partners, or clients"
+      ],
+      application: {
+        deadline: "Rolling basis",
+        instructions: "Send your CV and a brief cover letter (max 150 words) to careers@educ8africa.com",
+        subjectLine: "Application – National Service Associate Technical Writer & Research Lead"
+      }
     }
   ];
 
