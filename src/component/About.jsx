@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Bar, BarChart, Legend, Line, LineChart, Tooltip, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { Users, Award, MapPin } from 'lucide-react';
 import './AboutSection.css'; // Import the CSS file for custom styles
 
 // Enhanced data showing growth in cybersecurity training
@@ -59,6 +60,142 @@ const AboutSection = ({ darkMode }) => {
               <p className="text-lg leading-relaxed font-bold text-red-600">
                 From hands-on training to industry projects, we are not here to tick boxes — we are here to spark transformation. If you are serious about skills, relevance, and the future of Africa, Educ8Africa is where your journey begins.
               </p>
+            </div>
+          </div>
+
+          {/* National Service Program Section */}
+          <div className="mb-16">
+            <div className="text-center mb-12">
+              <h3 className={`text-4xl font-bold mb-4 ${
+                darkMode ? 'text-white' : 'text-gray-900'
+              }`}>
+                National Service <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">Program</span>
+              </h3>
+              <p className={`text-xl max-w-3xl mx-auto mb-8 leading-relaxed ${
+                darkMode ? 'text-gray-300' : 'text-gray-600'
+              }`}>
+                Join our National Service Program and gain valuable industry experience while contributing to Africa's digital transformation and cybersecurity advancement.
+              </p>
+
+              {/* NSS Statistics */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+                <div className={`p-6 rounded-xl transition-all duration-300 hover:scale-105 ${
+                  darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-50 hover:bg-white'
+                } border ${darkMode ? 'border-gray-600' : 'border-gray-200'} shadow-sm hover:shadow-md`}>
+                  <div className="flex items-center justify-center mb-4">
+                    <div className={`w-12 h-12 rounded-lg ${
+                      darkMode ? 'bg-gray-600' : 'bg-white'
+                    } flex items-center justify-center shadow-sm`}>
+                      <Users className="w-6 h-6 text-blue-600" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-bold mb-2 text-blue-600">
+                    500+
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Active Participants
+                  </div>
+                </div>
+
+                <div className={`p-6 rounded-xl transition-all duration-300 hover:scale-105 ${
+                  darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-50 hover:bg-white'
+                } border ${darkMode ? 'border-gray-600' : 'border-gray-200'} shadow-sm hover:shadow-md`}>
+                  <div className="flex items-center justify-center mb-4">
+                    <div className={`w-12 h-12 rounded-lg ${
+                      darkMode ? 'bg-gray-600' : 'bg-white'
+                    } flex items-center justify-center shadow-sm`}>
+                      <Award className="w-6 h-6 text-green-600" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-bold mb-2 text-green-600">
+                    95%
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Completion Rate
+                  </div>
+                </div>
+
+                <div className={`p-6 rounded-xl transition-all duration-300 hover:scale-105 ${
+                  darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-50 hover:bg-white'
+                } border ${darkMode ? 'border-gray-600' : 'border-gray-200'} shadow-sm hover:shadow-md`}>
+                  <div className="flex items-center justify-center mb-4">
+                    <div className={`w-12 h-12 rounded-lg ${
+                      darkMode ? 'bg-gray-600' : 'bg-white'
+                    } flex items-center justify-center shadow-sm`}>
+                      <MapPin className="w-6 h-6 text-red-600" />
+                    </div>
+                  </div>
+                  <div className="text-3xl font-bold mb-2 text-red-600">
+                    15+
+                  </div>
+                  <div className={`text-sm font-medium ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Partner Organizations
+                  </div>
+                </div>
+              </div>
+
+              {/* Program Benefits */}
+              <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 rounded-xl ${
+                darkMode ? 'bg-gray-700' : 'bg-gray-50'
+              } shadow-inner`}>
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <h4 className={`text-lg font-semibold mb-2 ${
+                    darkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Industry Experience
+                  </h4>
+                  <p className={`text-sm leading-relaxed ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Gain hands-on experience in cybersecurity and tech operations
+                  </p>
+                </div>
+
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <h4 className={`text-lg font-semibold mb-2 ${
+                    darkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Professional Network
+                  </h4>
+                  <p className={`text-sm leading-relaxed ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Connect with industry leaders and fellow professionals
+                  </p>
+                </div>
+
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <h4 className={`text-lg font-semibold mb-2 ${
+                    darkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Skill Development
+                  </h4>
+                  <p className={`text-sm leading-relaxed ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Enhance your technical and soft skills through real projects
+                  </p>
+                </div>
+
+                <div className="text-center transform transition-all duration-300 hover:scale-105">
+                  <h4 className={`text-lg font-semibold mb-2 ${
+                    darkMode ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    Career Growth
+                  </h4>
+                  <p className={`text-sm leading-relaxed ${
+                    darkMode ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    Build a strong foundation for your cybersecurity career
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 

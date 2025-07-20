@@ -164,48 +164,7 @@ function NSS() {
                 </Link>
               </div>
               
-              <div className="text-center mb-12">
-                <h1 className={`text-4xl md:text-5xl font-bold mb-4 animate-fade-in ${
-                  darkMode ? 'text-white' : 'text-gray-900'
-                }`}>
-                  National Service <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">Program</span>
-                </h1>
-                <p className={`text-xl max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in-delay ${
-                  darkMode ? 'text-gray-300' : 'text-gray-600'
-                }`}>
-                  Join our National Service Program and gain valuable industry experience while contributing to Africa's digital transformation and cybersecurity advancement.
-                </p>
 
-                {/* NSS Statistics */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                  {measureOperation('renderStats', () => 
-                    nssStats.map((stat, index) => (
-                      <StatCard 
-                        key={`${stat.label}-${index}`}
-                        stat={stat} 
-                        darkMode={darkMode} 
-                        index={index}
-                      />
-                    ))
-                  )}
-                </div>
-              </div>
-
-              {/* Program Benefits */}
-              <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6 rounded-xl ${
-                darkMode ? 'bg-gray-700' : 'bg-gray-50'
-              } shadow-inner`}>
-                {measureOperation('renderBenefits', () =>
-                  programBenefits.map((benefit, index) => (
-                    <BenefitCard 
-                      key={`${benefit.title}-${index}`}
-                      benefit={benefit} 
-                      darkMode={darkMode} 
-                      index={index}
-                    />
-                  ))
-                )}
-              </div>
             </div>
           </section>
 
