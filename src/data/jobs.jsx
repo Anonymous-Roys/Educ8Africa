@@ -1,6 +1,6 @@
 const jobs = [
   {
-    title: "Associate Web Developer (Cybersecurity Internship)",
+    title: "Associate Web Developer",
     organization: "Educ8africa",
     location: "Remote",
     description: "Design, code, and maintain websites and web applications for Educ8africa's mission-driven platforms.",
@@ -37,7 +37,7 @@ const jobs = [
     applicationInstructions: "Please submit your resume and portfolio to [Email Address]."
   },
   {
-    title: "Online Community Engagement Associate (Cybersecurity Internship)",
+    title: "Online Community Engagement Associate",
     organization: "Educ8africa",
     location: "Remote",
     description: "Foster and manage a vibrant online community while providing excellent customer service and support.",
@@ -75,7 +75,7 @@ const jobs = [
     applicationInstructions: "Please submit your resume to [Email Address]."
   },
   {
-    title: "Associate Video Content Creator and Editor (Cybersecurity Internship)",
+    title: "Associate Video Content Creator and Editor",
     organization: "Educ8africa",
     location: "Remote",
     description: "The Associate Video Content Creator and Editor will be responsible for producing high-quality video content that engages our online community. This role will involve brainstorming, filming, editing, and distributing video content across various platforms.",
@@ -126,7 +126,7 @@ const jobs = [
     applicationInstructions: "Please submit your resume and a portfolio of your work to [Email Address]."
   },
   {
-    title: "Associate Content Strategist (Cybersecurity Internship)",
+    title: "Associate Content Strategist",
     organization: "[Organization Name]",
     location: "Remote",
     description: "The Associate Content Strategist (Cybersecurity Internship) will play a crucial role in driving thought leadership and engaging with our audience through high-quality content. This individual will be responsible for researching cybersecurity trends, news, and resources, and creating compelling blog posts and social media content.",
@@ -170,7 +170,7 @@ const jobs = [
     applicationInstructions: "This internship provides an opportunity for a motivated student to gain practical experience in cybersecurity content strategy and contribute to a dynamic team."
   },
   {
-    title: "Associate Outreach Lead (Cybersecurity Internship)",
+    title: "Associate Outreach Lead",
     organization: "[Company Name]",
     location: "Remote",
     description: "As an Associate Outreach Lead, you will play a critical role in reaching out to students, generating awareness about our courses, and guiding them through the enrollment process. You will lead campus ambassadors, track outreach performance, and report results to the Director of Outreach.",

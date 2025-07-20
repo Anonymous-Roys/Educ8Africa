@@ -67,16 +67,35 @@ Best regards,
             </h2>
             
             <p className={`text-xs sm:text-sm leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              If you are a motivated and enthusiastic individual looking to contribute to a thriving 
-              company and gain valuable experience in the field of cybersecurity, we encourage you to apply. 
-              Please submit your resume and cover letter to{' '}
-              <a 
-                href="mailto:careers@educ8africa.com" 
-                className="text-red-600 hover:text-red-700 underline break-words"
-              >
-                careers@educ8africa.com
-              </a>.
+              If you are a motivated and enthusiastic individual looking to contribute to a thriving online community and gain valuable experience in the field of cybersecurity, we encourage you to apply.
             </p>
+            
+            <div className={`text-xs sm:text-sm leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+              <p>
+                <strong>Please submit your CV and a brief cover letter (maximum 150 words) to:</strong>
+              </p>
+              <p>
+                📧{' '}
+                <a 
+                  href="mailto:careers@educ8africa.com" 
+                  className="text-red-600 hover:text-red-700 underline break-words"
+                >
+                  careers@educ8africa.com
+                </a>
+              </p>
+              <p>
+                📌 <strong>Subject Line:</strong> Application – National Service Associate Technical Writer & Research Lead
+              </p>
+              
+              <div className="mt-4">
+                <p className="font-semibold mb-2">Additional Notes</p>
+                <ul className="space-y-1 text-xs list-disc list-inside">
+                  <li>Applicants are expected to manage their time effectively within a flexible remote structure.</li>
+                  <li>You must be able to collaborate with teams, meet project timelines, and contribute to shared goals.</li>
+                  <li>Strong performers may be given priority consideration for future roles within Educ8Africa or its partner network.</li>
+                </ul>
+              </div>
+            </div>
 
             {/* Action buttons */}
             <div className="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-3 pt-3 sm:pt-4 border-t border-gray-200 dark:border-gray-700">

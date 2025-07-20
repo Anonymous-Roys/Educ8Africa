@@ -147,10 +147,33 @@ const JobBoard = ({ darkMode }) => {
           <h2 className={`text-xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
             Apply for {selectedJob.title}
           </h2>
-          <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>
-            If you are a motivated and enthusiastic individual looking to contribute to a thriving online
-            community and gain valuable experience in the field of cybersecurity, we encourage you to apply.
-            Please submit your resume and cover letter to <a href="mailto:careers@educ8africa.com" className="underline">careers@educ8africa.com</a>.
+          <p className={`space-y-3 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+            <span className="block">
+              If you are a motivated and enthusiastic individual looking to contribute to a thriving online
+              community and gain valuable experience in the field of cybersecurity, we encourage you to apply.
+            </span>
+            
+            <span className="block">
+              <strong>Please submit your CV and a brief cover letter (maximum 150 words) to:</strong>
+            </span>
+            <span className="block">
+              📧{' '}
+              <a href="mailto:careers@educ8africa.com" className="text-red-600 hover:text-red-700 underline">
+                careers@educ8africa.com
+              </a>
+            </span>
+            <span className="block">
+              📌 <strong>Subject Line:</strong> Application – National Service Associate Technical Writer & Research Lead
+            </span>
+            
+            <span className="block mt-4">
+              <strong>Additional Notes</strong>
+            </span>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>Applicants are expected to manage their time effectively within a flexible remote structure.</li>
+              <li>You must be able to collaborate with teams, meet project timelines, and contribute to shared goals.</li>
+              <li>Strong performers may be given priority consideration for future roles within Educ8Africa or its partner network.</li>
+            </ul>
           </p>
         </Modal>
       </JobCardModal>
