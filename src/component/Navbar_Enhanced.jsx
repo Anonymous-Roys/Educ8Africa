@@ -14,8 +14,8 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
   const navItems = [
     { id: 'home', label: 'Home', route: '/', href: '#home' },
     { id: 'about', label: 'About Us', route: '/about', href: '#about' },
-    { id: 'jobboard', label: 'Internship Program', route: '/jobs', href: '#jobboard' },
-    { id: 'nss', label: 'NSS Program', route: '/nss', href: '#nss' },
+    { id: 'jobboard', label: 'Internship Programme', route: '/jobs', href: '#jobboard' },
+    { id: 'nss', label: 'NSP Programme', route: '/nss', href: '#nss' },
     { id: 'contact', label: 'Contact Us', route: '/contact', href: '#contact' }
   ];
 
