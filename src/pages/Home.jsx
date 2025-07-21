@@ -8,7 +8,7 @@ import SkipNavigation from '../components/common/SkipNavigation';
 import ScrollToTop from '../components/common/ScrollToTop';
 import AccessibleButton from '../components/common/AccessibleButton';
 import { useActiveSection, useLocalStorage } from '../hooks';
-import { ArrowRight, Users, Briefcase, GraduationCap, MessageCircle } from 'lucide-react';
+import { ArrowRight, Users, Briefcase, GraduationCap, MessageCircle, Heart, UserCheck } from 'lucide-react';
 
 function Home() {
   // Use localStorage to persist dark mode preference
@@ -58,6 +58,22 @@ function Home() {
       textColor: 'text-red-600'
     },
     {
+      icon: Heart,
+      title: 'Volunteer Program',
+      description: 'Make a difference by volunteering and supporting cybersecurity education in Africa',
+      action: () => navigate('/volunteers'),
+      color: 'from-pink-500 to-pink-600',
+      textColor: 'text-pink-600'
+    },
+    {
+      icon: UserCheck,
+      title: 'Mentor Program',
+      description: 'Share your expertise and guide the next generation of cybersecurity professionals',
+      action: () => navigate('/mentors'),
+      color: 'from-indigo-500 to-indigo-600',
+      textColor: 'text-indigo-600'
+    },
+    {
       icon: MessageCircle,
       title: 'Get in Touch',
       description: 'Contact us for partnerships, inquiries, or internship guidance',
@@ -103,7 +119,7 @@ function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {quickActions.map((action, index) => {
                   const IconComponent = action.icon;
                   return (

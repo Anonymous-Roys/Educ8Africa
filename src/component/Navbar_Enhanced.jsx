@@ -16,6 +16,8 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
     { id: 'about', label: 'About Us', route: '/about', href: '#about' },
     { id: 'jobboard', label: 'Internship Programme', route: '/jobs', href: '#jobboard' },
     { id: 'nss', label: 'NSP Programme', route: '/nss', href: '#nss' },
+    { id: 'volunteers', label: 'Volunteers', route: '/volunteers', href: '#volunteers' },
+    { id: 'mentors', label: 'Mentors', route: '/mentors', href: '#mentors' },
     { id: 'contact', label: 'Contact Us', route: '/contact', href: '#contact' }
   ];
 
@@ -82,6 +84,8 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
       '/about': 'about',
       '/jobs': 'jobboard', 
       '/nss': 'nss',
+      '/volunteers': 'volunteers',
+      '/mentors': 'mentors',
       '/contact': 'contact'
     };
     

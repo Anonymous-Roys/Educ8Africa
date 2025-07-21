@@ -10,6 +10,8 @@ const About = lazy(() => import('./pages/About'));
 const Jobs = lazy(() => import('./pages/Jobs'));
 const NSS = lazy(() => import('./pages/nss'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Volunteers = lazy(() => import('./pages/Volunteers'));
+const Mentors = lazy(() => import('./pages/Mentors'));
 const ErrorPage = lazy(() => import('./pages/ErrorPage'));
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path="/jobs" element={<Jobs/>} />
             <Route path="/nss" element={<NSS/>} />
             <Route path="/contact" element={<Contact/>} />
+            <Route path="/volunteers" element={<Volunteers/>} />
+            <Route path="/mentors" element={<Mentors/>} />
             {/* Catch-all route for errors */}
             <Route path="*" element={<ErrorPage/>} />
           </Routes>
