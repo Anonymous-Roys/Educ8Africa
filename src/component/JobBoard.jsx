@@ -159,7 +159,15 @@ const JobBoard = ({ darkMode }) => {
             </span>
             <span className="block">
               📧{' '}
-              <a href="mailto:careers@educ8africa.com" className="text-red-600 hover:text-red-700 underline">
+              <a 
+                href="mailto:careers@educ8africa.com" 
+                className="text-red-600 hover:text-red-700 underline"
+                onClick={() => {
+                  setTimeout(() => {
+                    alert('Your email client has been opened. Please send your application with your CV and cover letter attached.');
+                  }, 1000);
+                }}
+              >
                 careers@educ8africa.com
               </a>
             </span>

@@ -68,8 +68,13 @@ Thank you for considering my application.
 Best regards,
 ${formData.fullName}`;
 
-    const mailtoLink = `mailto:info@educ8africa.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:careers@educ8africa.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
+    
+    // Show confirmation after a brief delay
+    setTimeout(() => {
+      alert('Your email client has been opened with your volunteer application. Please send the email to complete your application.');
+    }, 1000);
   };
 
   const volunteerOpportunities = [

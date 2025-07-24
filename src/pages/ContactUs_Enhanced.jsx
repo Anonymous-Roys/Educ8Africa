@@ -142,6 +142,11 @@ This message was sent via the Educ8Africa contact form.`;
       // Open the email client
       window.location.href = mailtoLink;
       
+      // Show confirmation alert after a brief delay
+      setTimeout(() => {
+        alert(`Your email client has been opened with your message. Please send the email to complete your inquiry to ${targetEmail}.`);
+      }, 1000);
+      
       // Show success message
       setSubmitStatus('success');
       success(`Your message will be sent to ${targetEmail}. Thank you for contacting us!`);
