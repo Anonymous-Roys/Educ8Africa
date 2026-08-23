@@ -157,18 +157,12 @@ const JobBoard = ({ darkMode }) => {
             <span className="block">
               <strong>Please submit your CV and a brief cover letter (maximum 150 words) to:</strong>
             </span>
-            <span className="block">
-              📧{' '}
+              <span className="block">
               <a 
-                href="mailto:careers@educ8africa.com" 
+                href={`mailto:careers@educ8africa.com?subject=${encodeURIComponent(`Application - ${selectedJob.title}`)}&body=${encodeURIComponent(`Dear Hiring Team,\n\nI am writing to apply for the position of ${selectedJob.title}.\n\nPlease find my resume and cover letter attached.\n\nBest regards,`)}`} 
                 className="text-red-600 hover:text-red-700 underline"
-                onClick={() => {
-                  setTimeout(() => {
-                    alert('Your email client has been opened. Please send your application with your CV and cover letter attached.');
-                  }, 1000);
-                }}
               >
-                careers@educ8africa.com
+                Send Email to careers@educ8africa.com
               </a>
             </span>
           </p>

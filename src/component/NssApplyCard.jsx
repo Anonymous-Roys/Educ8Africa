@@ -84,7 +84,7 @@ Best regards,
                 </a>
               </p>
               <p>
-                📌 <strong>Subject Line:</strong> Application – National Service Associate Technical Writer & Research Lead
+                <strong>Subject Line:</strong> Application - {jobTitle}
               </p>
               
               <div className="mt-4">
@@ -114,6 +114,7 @@ Best regards,
               <button
                 onClick={handleEmailRedirect}
                 className="w-full sm:w-auto px-3 sm:px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors font-medium text-sm"
+                type="button"
               >
                 Send Email
               </button>

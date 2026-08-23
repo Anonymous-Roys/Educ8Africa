@@ -1,3 +1,11 @@
+import creativeMultimediaDocument from '../assets/NSP_Lead_Creative_Multimedia_V 3.0.docx';
+import leadOutreachDocument from '../assets/NSP_Lead_Outreach_and_Campus_Engagement_V 3.0.docx';
+import assistantOutreachDocument from '../assets/NSP_Assistant_Lead_Outreach_and_Campus_Engagement_V 3.0.docx';
+import partnershipsDocument from '../assets/NSP_Lead_Partnerships_and_People_Operations_V 3.0.docx';
+import socialMediaDocument from '../assets/NSP_Lead_Social_Media_and_Digital_Communities_V 3.0.docx';
+import leadProgrammesDocument from '../assets/NSP_Lead_Programmes_Training_and_Technical_Enablement_V 3.0.docx';
+import assistantProgrammesDocument from '../assets/NSP_Assistant_Programmes_Training_and_Technical_Enablement_V 3.0.docx';
+
 const jobPostings = [
     {
       jobTitle: "Lead, Creative Multimedia (National Service Personnel)",
@@ -6,6 +14,7 @@ const jobPostings = [
       location: "Hybrid (Mostly Remote)",
       jobType: "Full-time",
       compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
+      document: creativeMultimediaDocument,
       company: {
         name: "Grow With Educ8Africa",
         description: `Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa’s future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy.`
@@ -124,6 +133,7 @@ const jobPostings = [
         location: "Hybrid (Mostly Remote)",
         jobType: "Full-time (National Service Posting)",
         compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
+        document: leadOutreachDocument,
         company: {
           name: "Grow With Educ8Africa",
           description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
@@ -218,6 +228,7 @@ const jobPostings = [
         location: "Hybrid (Mostly Remote)",
         jobType: "Full-time (National Service Posting)",
         compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
+        document: assistantOutreachDocument,
         company: {
           name: "Grow With Educ8Africa",
           description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
@@ -312,6 +323,7 @@ const jobPostings = [
   location: "Hybrid (Mostly Remote)",
   jobType: "Full-time (National Service Posting)",
   compensation: "National Service Allowance (as per national guidelines)",
+  document: partnershipsDocument,
   company: {
     name: "Grow With Educ8Africa",
     description:
@@ -415,6 +427,7 @@ const jobPostings = [
   location: "Hybrid (Mostly Remote)",
   jobType: "Full-time (National Service Posting)",
   compensation: "Monthly National Service Allowance",
+  document: socialMediaDocument,
   company: {
     name: "Grow With Educ8Africa",
     description:
@@ -512,6 +525,7 @@ const jobPostings = [
   location: "Hybrid (Mostly Remote)",
   jobType: "Full-time (National Service Posting)",
   compensation: "National Service Allowance (as per national guidelines)",
+  document: leadProgrammesDocument,
   company: {
     name: "Grow With Educ8Africa",
     description:
@@ -614,6 +628,7 @@ const jobPostings = [
       location: "Remote / Hybrid (Ghana)",
       jobType: "Full-time (National Service Posting)",
       compensation: "Monthly National Service Allowance",
+      document: assistantProgrammesDocument,
       company: {
         name: "Grow With Educ8Africa",
         description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa - a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa's future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy."

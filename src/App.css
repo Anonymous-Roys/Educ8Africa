@@ -1,4 +1,4 @@
-/* Add this to your global CSS file (e.g., styles.css) */
+/* Shared scroll treatment for the complete application shell. */
 ::-webkit-scrollbar {
   width: 8px; 
 }
@@ -17,6 +17,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 

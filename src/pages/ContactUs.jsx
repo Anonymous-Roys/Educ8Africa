@@ -85,7 +85,7 @@ Sent from Educ8Africa Contact Form
   };
 
   return (
-    <div className={`min-h-screen py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-500 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
+    <div className={`site-shell min-h-screen py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 transition-all duration-500 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-50 text-gray-900'}`}>
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 lg:mb-16">

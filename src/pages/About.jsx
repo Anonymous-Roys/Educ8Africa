@@ -28,7 +28,7 @@ function About() {
 
   return (
     <ToastProvider darkMode={darkMode}>
-      <div className={`min-h-screen transition-colors duration-300 ${
+      <div className={`site-shell min-h-screen transition-colors duration-300 ${
         darkMode ? 'bg-gray-900' : 'bg-gray-50'
       }`}>
         <SkipNavigation />
