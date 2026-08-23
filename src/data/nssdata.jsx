@@ -1,8 +1,8 @@
 const jobPostings = [
     {
-      jobTitle: "Lead Associate Graphics Designer (National Service Personnel)",
-      department: "Media and Communications",
-      reportsTo: "Associate Media Lead",
+      jobTitle: "Lead, Creative Multimedia (National Service Personnel)",
+      department: "Creative Multimedia",
+      reportsTo: "Chief Executive Officer (CEO)",
       location: "Hybrid (Mostly Remote)",
       jobType: "Full-time",
       compensation: "National Service Allowance (as per national guidelines) + Optional Performance Bonus",
@@ -10,7 +10,11 @@ const jobPostings = [
         name: "Grow With Educ8Africa",
         description: `Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa’s future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy.`
       },
-      roleOverview: `As the Lead Associate Graphics Designer (National Service Personnel), you will take the lead in creating visually compelling graphics that communicate Educ8Africa’s message across digital platforms. You will collaborate with the outreach, media, and content teams to design impactful visuals and guide one or more design interns in executing projects aligned with our brand identity. This is a leadership-in-training opportunity ideal for a highly creative NSS personnel ready to grow professionally.`,
+      roleOverview: `Job Purpose: To give every Grow With Educ8Africa campaign, programme, and event a professional visual voice, and to own end-to-end technical production for all organizational webinars.
+
+    As the Creative Multimedia Lead, you will lead the creative development and multimedia production of Grow With Educ8Africa’s campaigns, programs, events, and communications initiatives. Reporting directly to the CEO, you will serve as the organization’s primary in-house creative resource, responsible for creative strategy, visual storytelling, graphic design, photography, videography, and multimedia production across platforms.
+
+    This role is ideal for a highly creative and proactive National Service Personnel with a strong artistic eye, multimedia production skills, storytelling abilities, and a passion for creating content that inspires action. You will provide creative direction to interns and contributors, develop visual content across static and motion formats, and leverage emerging technologies including AI-powered creative tools to improve content quality, efficiency, and audience engagement.`,
       keyResponsibilities: {
         designCreation: [
           "Design digital and print assets for use across social media, websites, newsletters, presentations, flyers, and more.",
@@ -114,7 +118,7 @@ const jobPostings = [
       }
     },
     {
-        jobTitle: "Associate Outreach Lead (National Service Personnel)",
+        jobTitle: "Lead, Outreach and Campus Engagement (National Service Personnel)",
         department: "Outreach",
         reportsTo: "CEO",
         location: "Hybrid (Mostly Remote)",
@@ -124,7 +128,11 @@ const jobPostings = [
           name: "Grow With Educ8Africa",
           description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
         },
-        roleOverview: "As an Associate Outreach Lead (National Service Personnel), you will play a key leadership role in executing and overseeing campus-based outreach initiatives to promote Educ8Africa’s certification programs. You will coordinate outreach trainees, manage campus ambassadors, and collaborate with the social media team to ensure visibility and impact. This position reports directly to the CEO and serves as the primary liaison between the outreach team and leadership. You will also perform both sales and marketing responsibilities — creating awareness, generating student interest, and ensuring they move from interest to enrollment.",
+        roleOverview: `Job Purpose: To drive Grow With Educ8Africa’s visibility, reach, and engagement across campuses and youth communities, and to convert that reach into qualified applicants for its programmes.
+
+      As the Lead, Outreach and Campus Engagement, you will drive Grow With Educ8Africa’s presence, reach, and engagement across universities, polytechnics, technical institutions, and youth communities, translating engagement plans into campus activity, institutional relationships, student participation, events, and measurable outcomes while leading Outreach Assistant(s).
+
+      This role requires a proactive, highly organized, and well-networked communicator who can represent the organization confidently, build relationships at multiple levels, execute ground-level activations, follow through on leads, and use data to improve outreach performance. The successful candidate must be comfortable balancing strategic planning with hands-on campus execution.`,
         keyResponsibilities: {
           salesMarketing: [
             "Perform both sales and marketing responsibilities to drive student enrollment",
@@ -214,7 +222,11 @@ const jobPostings = [
           name: "Grow With Educ8Africa",
           description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
         },
-        roleOverview: "As an Associate Outreach Lead (National Service Personnel), you will play a key leadership role in executing and overseeing campus-based outreach initiatives to promote Educ8Africa’s certification programs. You will coordinate outreach trainees, manage campus ambassadors, and collaborate with the social media team to ensure visibility and impact. This position reports directly to the CEO and serves as the primary liaison between the outreach team and leadership. You will also perform both sales and marketing responsibilities — creating awareness, generating student interest, and ensuring they move from interest to enrollment.",
+        roleOverview: `Job Purpose: To provide hands-on execution support that turns the campus engagement plan into consistent, well-documented activity on the ground.
+
+      As the Assistant Lead, Outreach and Campus Engagement, you will support the Lead in delivering Grow With Educ8Africa’s campus outreach, student engagement, institutional relationships, events, and recruitment activities. You will take responsibility for assigned campuses and activities, support Outreach Assistants and Campus Ambassadors, follow up on leads and stakeholders, maintain accurate records, and help ensure outreach plans are executed consistently and effectively.
+
+      This role requires a proactive, organized, and confident communicator who can represent the organization professionally, build relationships with students and institutional stakeholders, execute campus activities, follow through on leads and action points, support events and ambassadors, and use accurate information and data to strengthen outreach performance.`,
         keyResponsibilities: {
           salesMarketing: [
             "Perform both sales and marketing responsibilities to drive student enrollment",
@@ -294,7 +306,7 @@ const jobPostings = [
         }
     },
     {
-        jobTitle: "Associate Partnership & Recruitment Lead (National Service Personnel)",
+        jobTitle: "Lead, Partnerships and People Operations (National Service Personnel)",
   department: "Partnership & Recruitment",
   reportsTo: "Chief Executive Officer (CEO)",
   location: "Hybrid (Mostly Remote)",
@@ -306,7 +318,7 @@ const jobPostings = [
       "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
   },
   roleOverview:
-    "The Associate Partnership & Recruitment Lead will spearhead all partnership and talent pipeline initiatives for Educ8Africa during their national service year. Reporting directly to the CEO, this high-impact role involves developing strategic collaborations, sourcing job and internship opportunities, managing student placements, and expanding the institution’s network across industry and education sectors. The role is ideal for a proactive, organized, and ambitious NSP passionate about connecting education to employment.",
+    "Job Purpose: To build the external ecosystem that connects Grow With Educ8Africa’s students and alumni to industry, career opportunities, and funding, while leading the organization’s internal people function.\n\nAs the Lead, Partnerships and People Operations, you will lead Grow With Educ8Africa’s internal people function and build the external ecosystem that connects its students and alumni to industry, career opportunities, and funding.\n\nThe role combines people operations, employer partnerships, career development and placement, apprenticeship and mentorship sourcing, alumni engagement, sponsorship, and grant development. You will work with employers, industry professionals, funders, and other strategic stakeholders to strengthen Grow With Educ8Africa’s talent pathways and organisational capacity.",
   keyResponsibilities: {
     partnershipDevelopment: [
       "Identify and cultivate partnerships with corporations, foundations, government agencies, and other relevant organizations",
@@ -397,7 +409,7 @@ const jobPostings = [
   }
     },
     {
-        jobTitle: "Associate Social Media Lead (National Service Personnel)",
+        jobTitle: "Lead, Social Media and Digital Communities (National Service Personnel)",
   department: "Media & Communications",
   reportsTo: "Media and Communications Lead",
   location: "Hybrid (Mostly Remote)",
@@ -409,7 +421,7 @@ const jobPostings = [
       "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
   },
   roleOverview:
-    "The Associate Social Media Lead (National Service Personnel) supports the Media Department by executing day-to-day social media activities and producing high-quality content that promotes Educ8Africa’s cybersecurity programs. This includes content creation, calendar management, digital engagement, and analytics — all under the supervision of the Head of Media.",
+    "Job Purpose: To translate Grow With Educ8Africa’s priorities into audience-led digital communication that builds visibility, trust, and participation across its social and digital communities.\n\nThe Lead, Social Media and Digital Communities owns the day-to-day social media and digital community function at Grow With Educ8Africa. The role is responsible for social strategy, audience and channel management, content planning and copywriting, community experience, social listening, campaign execution, and performance analysis.\n\nThis role combines hands-on social-media execution with developmental leadership and cross-functional coordination. It works closely with the Creative Multimedia Lead and other organizational Leads to ensure that content, campaigns, and community activity are aligned with organizational priorities. The role does not replace specialist creative, technical-content, programme, or partnership functions.",
   keyResponsibilities: {
     contentCreation: [
       "Write platform-appropriate content including captions, threads, posts, and testimonials",
@@ -494,7 +506,7 @@ const jobPostings = [
   }
     },
     {
-        jobTitle: "Associate Training and Programmes Lead (National Service Personnel)",
+        jobTitle: "Lead, Programmes, Training and Technical Enablement (National Service Personnel)",
   department: "Training and Programmes",
   reportsTo: "Chief Executive Officer (CEO)",
   location: "Hybrid (Mostly Remote)",
@@ -506,7 +518,7 @@ const jobPostings = [
       "Grow With Educ8Africa is the CSR arm of Educ8Africa — a knowledge and skills transfer company closing Africa’s cybersecurity skills gap. Educ8Africa provides industry-relevant training and certifications to university students and young professionals at highly subsidized rates."
   },
   roleOverview:
-    "This role involves delivering and improving prospective student programs, teaching cybersecurity, managing outreach, offering technical support, and leading automation initiatives. You will oversee interns, support learners, and ensure operational efficiency across training and program coordination.",
+    "Job Purpose: To give Grow With Educ8Africa's learners a technically excellent training experience, from curriculum through certification, while owning AI and business process automation strategy for the whole organization.\n\nThe Lead, Programmes, Training and Technical Enablement owns the technical training experience at Grow With Educ8Africa: curriculum, delivery, learner support, and the underlying technical systems that make it all run. The role also owns AI integration and business process automation for the entire organization, not only Programmes, developing strategy for CEO approval and holding full implementation authority once approved.\n\nThis role combines hands-on teaching with technical systems ownership and people leadership (Trainers, mentors, and program interns), and reports directly to the CEO.",
   keyResponsibilities: {
     teaching: [
       "Serve as a TA or teach basic cybersecurity courses independently",
@@ -596,7 +608,7 @@ const jobPostings = [
   }
     },
     {
-      jobTitle: "Associate Technical Writer and Research Lead (National Service Personnel)",
+      jobTitle: "Assistant, Programmes, Training and Technical Enablement (National Service Personnel)",
       department: "Technical Writing and Research",
       reportsTo: "CEO",
       location: "Remote / Hybrid (Ghana)",
@@ -606,7 +618,7 @@ const jobPostings = [
         name: "Grow With Educ8Africa",
         description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa - a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa's future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy."
       },
-      roleOverview: "The Associate Technical Writer and Research Lead (National Service Personnel) plays a pivotal role in bridging the gap between Educ8Africa's research team and media/communications team. This role involves developing technically accurate, well-researched, and engaging educational content that supports our cybersecurity training programs. Working closely with subject matter experts, media creatives, and the CEO, the Lead will be responsible for content that powers our blog, social media, resource banks, and student learning platforms. This role is ideal for a cybersecurity-inclined writer with a passion for research, content creation, and strategic storytelling that educates and inspires Africa's next generation of cybersecurity professionals.",
+      roleOverview: "Job Purpose: To provide hands-on technical, administrative, and delivery support that enables Grow With Educ8Africa's training programs to run smoothly and professionally.\n\nThe Assistant, Programmes, Training and Technical Enablement supports the Lead across curriculum, teaching, technical and lab support, webinar coordination, and day-to-day program administration. It is an execution-focused, hands-on role.\n\nCurriculum support applies only to in-house courses; certification programs follow a fixed third-party syllabus and are delivered, not developed. Strategic decisions on curriculum, staffing, mentor and trainer selection, AI adoption, and program direction remain with the Lead.",
       keyResponsibilities: {
         researchAndAnalysis: [
           "Conduct in-depth research on cybersecurity trends, news, and emerging technologies",
