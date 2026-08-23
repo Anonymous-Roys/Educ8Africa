@@ -111,6 +111,7 @@ const NssBoard = memo(({ darkMode }) => {
               department={posting.department}
               location={posting.location}
               roleOverview={posting.roleOverview}
+              document={posting.document}
               darkMode={darkMode}
               onShowMore={() => handleShowMore(posting)}
               isGridView={isGridView}

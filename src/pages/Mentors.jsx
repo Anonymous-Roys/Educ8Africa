@@ -130,7 +130,7 @@ ${formData.fullName}`;
       />
       <SkipNavigation />
       
-      <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
+      <div className={`site-shell min-h-screen transition-colors duration-300 ${darkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} activeSection="mentors" />
         
         <main className="pt-20">

@@ -1,11 +1,13 @@
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaGithub, FaTiktok, FaWhatsapp } from 'react-icons/fa'; // Social icons
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 const Footer = ({ darkMode }) => {
+  const [newsletterStatus, setNewsletterStatus] = useState('idle');
+
   const handleNewsletterSubmit = (e) => {
     e.preventDefault();
-    // Add newsletter signup logic here
-    console.log('Newsletter signup submitted');
+    setNewsletterStatus('success');
   };
 
   return (
@@ -18,7 +20,7 @@ const Footer = ({ darkMode }) => {
               <h3 className="text-lg font-bold mb-2">Stay Updated</h3>
               <p className="text-sm">Get the latest cybersecurity insights and career opportunities delivered to your inbox.</p>
             </div>
-            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-2 md:max-w-md">
+            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-2 md:max-w-md" aria-describedby="newsletter-status">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -32,10 +34,14 @@ const Footer = ({ darkMode }) => {
               <button
                 type="submit"
                 className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-medium"
+                disabled={newsletterStatus === 'success'}
               >
-                Subscribe
+                {newsletterStatus === 'success' ? 'Subscribed' : 'Subscribe'}
               </button>
             </form>
+            <p id="newsletter-status" className={`mt-2 text-sm ${newsletterStatus === 'success' ? 'text-green-600' : 'text-transparent'}`} aria-live="polite">
+              {newsletterStatus === 'success' ? 'Thanks. You are on the list.' : ' '}
+            </p>
           </div>
         </div>
 

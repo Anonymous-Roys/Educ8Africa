@@ -11,7 +11,7 @@ const AccessibleButton = ({
   type = 'button',
   ...props 
 }) => {
-  const baseClasses = 'font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed';
+  const baseClasses = 'btn font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 disabled:opacity-50 disabled:cursor-not-allowed';
   
   const variants = {
     primary: 'bg-red-600 text-white hover:bg-red-700 disabled:bg-gray-400',

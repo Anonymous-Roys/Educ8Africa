@@ -1,0 +1,85 @@
+.nss-document-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nss-document {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  background: #fff;
+  color: #202124;
+  border: 1px solid #d9d9d9;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 8%);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+}
+
+.nss-document > div > p:first-child {
+  margin-top: 0;
+}
+
+.nss-document p {
+  margin: 0 0 1rem;
+}
+
+.nss-document h1,
+.nss-document h2,
+.nss-document h3,
+.nss-document h4 {
+  color: #991b1b;
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.25;
+  margin: 1.75rem 0 0.75rem;
+}
+
+.nss-document h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+}
+
+.nss-document h2 {
+  border-bottom: 1px solid #e5b4b4;
+  font-size: 1.35rem;
+  padding-bottom: 0.35rem;
+}
+
+.nss-document h3,
+.nss-document h4 {
+  font-size: 1.1rem;
+}
+
+.nss-document ul,
+.nss-document ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.nss-document li {
+  margin: 0.35rem 0;
+}
+
+.nss-document strong {
+  color: #7f1d1d;
+}
+
+.nss-document-dark {
+  background: #f8fafc;
+}
+
+.nss-document-status {
+  padding: 2rem;
+  text-align: center;
+  color: #6b7280;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+@media (max-width: 640px) {
+  .nss-document {
+    border-left: 0;
+    border-right: 0;
+    box-shadow: none;
+    margin: 0 -1rem;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Logo } from "../data/img";
@@ -31,6 +31,11 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileMenuOpen]);
 
   const isHomePage = location.pathname === '/';
 
@@ -96,17 +101,17 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
 
   return (
     <header
-      className={`fixed w-full top-0 z-50 transition-all duration-300  
+      className={`fixed w-full top-0 z-50 transition-all duration-300
         ${scrolled ? "opacity-95 backdrop-blur-lg" : "opacity-100"}
-        ${darkMode ? "bg-gray-800/90" : "bg-white/90"} shadow-sm border-b ${
-          darkMode ? "border-gray-700" : "border-gray-200"
+        ${darkMode ? "bg-[#17211f]/95" : "bg-[#f7f5ef]/95"} shadow-sm border-b ${
+          darkMode ? "border-[#30403c]" : "border-[#dfe5df]"
         }`}
       style={{ backdropFilter: "blur(10px)" }}
     >
       <ProgressBar/>
       <div
         className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center transition-all duration-300 ${
-          scrolled ? "py-1" : "py-2"
+          scrolled ? "py-1" : "py-3"
         }`}
       >
         {/* Enhanced Logo */}
@@ -130,18 +135,18 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex items-center gap-6" aria-label="Primary navigation">
           {navItems.map((item) => (
             <button
               key={item.id}
-              className={`text-base font-medium transition-all duration-200 cursor-pointer relative group ${
+              className={`text-sm font-semibold transition-all duration-200 cursor-pointer relative group ${
                 currentActiveSection === item.id
                   ? darkMode 
                     ? "text-red-400" 
                     : "text-red-600"
                   : darkMode 
                     ? "text-gray-300 hover:text-white" 
-                    : "text-gray-700 hover:text-gray-900"
+                    : "text-[#40504b] hover:text-[#c9362b]"
               }`}
               onClick={() => handleNavigation(item)}
             >
@@ -205,14 +210,14 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
             {navItems.map((item) => (
               <button
                 key={item.id}
-                className={`block w-full text-left text-base font-medium transition-colors cursor-pointer ${
+                className={`block w-full text-left text-base font-semibold transition-colors cursor-pointer rounded-lg px-3 py-3 ${
                   currentActiveSection === item.id
                     ? darkMode 
                       ? "text-red-400" 
                       : "text-red-600"
                     : darkMode 
                       ? "text-gray-300 hover:text-white" 
-                      : "text-gray-700 hover:text-gray-900"
+                      : "text-[#40504b] hover:bg-red-50 hover:text-[#c9362b]"
                 }`}
                 onClick={() => handleNavigation(item)}
               >

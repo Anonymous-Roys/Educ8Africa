@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+//skip files
+.github
 
 # Editor directories and files
 .vscode/*
