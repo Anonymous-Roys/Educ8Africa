@@ -135,7 +135,7 @@ Message:
 ${formData.message}
 
 ---
-This message was sent via the Educ8Africa contact form.`;
+This message was sent via the Grow with Educ8Africa contact form.`;
 
       const mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
       

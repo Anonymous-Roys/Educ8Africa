@@ -112,7 +112,7 @@ const LandingPage = ({ darkMode }) => {
               `}
             >
               Be a part of{' '}
-              <span className="font-bold text-red-300">Educ8Africa</span>, and shape
+              <span className="font-bold text-red-300">Grow with Educ8Africa</span>, and shape
               the future of cybersecurity education across Africa.
               We're calling on passionate innovators to help us make a difference.
             </p>
@@ -128,7 +128,7 @@ const LandingPage = ({ darkMode }) => {
                 variant="primary"
                 size="large"
                 className="group bg-red-600 hover:bg-red-700 shadow-lg hover:shadow-xl transform hover:scale-105"
-                ariaLabel="Get started with Educ8Africa"
+                ariaLabel="Get started with Grow with Educ8Africa"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -143,7 +143,7 @@ const LandingPage = ({ darkMode }) => {
                     ? 'bg-white/10 text-white border-white/30 hover:bg-white/20' 
                     : 'bg-white/10 text-white border-white/30 hover:bg-white/20'
                 } backdrop-blur-sm`}
-                ariaLabel="Learn more about Educ8Africa"
+                ariaLabel="Learn more about Grow with Educ8Africa"
               >
                 <ArrowRight className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                 Learn More

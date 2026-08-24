@@ -123,7 +123,7 @@ function NSS() {
 
   // SEO metadata
   const pageMetadata = useMemo(() => ({
-    title: "National Service Program - Educ8Africa | Cybersecurity Career Launch",
+    title: "National Service Program - Grow with Educ8Africa | Cybersecurity Career Launch",
     description: "Join our National Service Program and gain valuable industry experience while contributing to Africa's digital transformation and cybersecurity advancement. 500+ active participants, 95% completion rate.",
     keywords: "National Service Program, cybersecurity internship, Africa tech training, career development, industry experience, professional network, skill development",
     url: `${window.location.origin}/nss`

@@ -49,7 +49,7 @@ const Footer = ({ darkMode }) => {
         <div className="w-full space-y-8 md:flex md:justify-between md:space-y-0 md:gap-8">
           {/* Logo and Description */}
           <div className="space-y-4 md:w-1/3">
-            <h2 className="text-2xl font-bold text-red-600">Educ8Africa</h2>
+            <h2 className="text-2xl font-bold text-red-600">Grow with Educ8Africa</h2>
             <p className="text-sm leading-relaxed">
               Empowering Africa through cybersecurity education and technology innovation. 
               Join us in building a more secure digital future for the continent.
@@ -190,7 +190,7 @@ const Footer = ({ darkMode }) => {
         {/* Footer Bottom Section */}
         <div className="flex flex-col items-center justify-between w-full pt-8 mt-8 text-sm border-t md:flex-row">
           <p className='text-center md:text-left'>
-            © {new Date().getFullYear()} Educ8Africa. All rights reserved.
+            © {new Date().getFullYear()} Grow with Educ8Africa. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="/privacy" className="hover:text-red-600 transition-colors">Privacy Policy</a>

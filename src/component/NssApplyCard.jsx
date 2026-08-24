@@ -67,7 +67,7 @@ Best regards,
             </h2>
             
             <p className={`text-xs sm:text-sm leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-              If you are a motivated and enthusiastic individual looking to contribute to a thriving online community and gain valuable experience in the field of cybersecurity, we encourage you to apply.
+              If you are motivated, eager to learn, and ready to gain real-world experience while contributing to meaningful work remotely, we would love to have you join the Grow with Educ8Africa team.
             </p>
             
             <div className={`text-xs sm:text-sm leading-relaxed ${darkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
@@ -92,7 +92,7 @@ Best regards,
                 <ul className="space-y-1 text-xs list-disc list-inside">
                   <li>Applicants are expected to manage their time effectively within a flexible remote structure.</li>
                   <li>You must be able to collaborate with teams, meet project timelines, and contribute to shared goals.</li>
-                  <li>Strong performers may be given priority consideration for future roles within Educ8Africa or its partner network.</li>
+                  <li>Strong performers may be given priority consideration for future roles within Grow with Educ8Africa or its partner network.</li>
                 </ul>
               </div>
             </div>

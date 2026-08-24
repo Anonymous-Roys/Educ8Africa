@@ -35,7 +35,7 @@ function Home() {
   const quickActions = [
     {
       icon: Users,
-      title: 'About Educ8Africa',
+      title: 'About Grow with Educ8Africa',
       description: 'Learn about our mission to transform cybersecurity education across Africa',
       action: () => navigate('/about'),
       color: 'from-blue-500 to-blue-600',
@@ -110,7 +110,7 @@ function Home() {
                 <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${
                   darkMode ? 'text-white' : 'text-gray-900'
                 }`}>
-                  Explore <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">Educ8Africa</span>
+                  Explore <span className="bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">Grow with Educ8Africa</span>
                 </h2>
                 <p className={`text-xl max-w-3xl mx-auto leading-relaxed ${
                   darkMode ? 'text-gray-300' : 'text-gray-600'
@@ -172,7 +172,7 @@ function Home() {
               <p className={`text-xl mb-8 leading-relaxed ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                Join thousands of professionals who have advanced their cybersecurity careers with Educ8Africa.
+                Join thousands of professionals who have advanced their cybersecurity careers with Grow with Educ8Africa.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
 const MetaTags = ({ 
-  title = "Educ8Africa - Cybersecurity Training & Education Platform",
-  description = "Transform your cybersecurity career with Educ8Africa. Access industry-relevant training, internship opportunities, and professional development programs across Africa.",
+  title = "Grow with Educ8Africa - Cybersecurity Training & Education Platform",
+  description = "Transform your cybersecurity career with Grow with Educ8Africa. Access industry-relevant training, internship opportunities, and professional development programs across Africa.",
   keywords = "cybersecurity training, Africa, internships, National Service Program, tech education, digital transformation, career development",
   image = "/assets/landingBG.png",
   url = window.location.href,
@@ -30,7 +30,7 @@ const MetaTags = ({
     // Basic meta tags
     updateMetaTag('meta[name="description"]', description);
     updateMetaTag('meta[name="keywords"]', keywords);
-    updateMetaTag('meta[name="author"]', 'Educ8Africa');
+    updateMetaTag('meta[name="author"]', 'Grow with Educ8Africa');
     updateMetaTag('meta[name="viewport"]', 'width=device-width, initial-scale=1.0');
     
     // Open Graph meta tags for social media
@@ -39,7 +39,7 @@ const MetaTags = ({
     updateMetaTag('meta[property="og:image"]', image);
     updateMetaTag('meta[property="og:url"]', url);
     updateMetaTag('meta[property="og:type"]', type);
-    updateMetaTag('meta[property="og:site_name"]', 'Educ8Africa');
+    updateMetaTag('meta[property="og:site_name"]', 'Grow with Educ8Africa');
     
     // Twitter Card meta tags
     updateMetaTag('meta[name="twitter:card"]', 'summary_large_image');
@@ -56,7 +56,7 @@ const MetaTags = ({
     const structuredData = {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "Educ8Africa",
+      "name": "Grow with Educ8Africa",
       "description": description,
       "url": url,
       "logo": image,
