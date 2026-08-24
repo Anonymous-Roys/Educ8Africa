@@ -33,7 +33,7 @@ const AboutSection = ({ darkMode }) => {
         }`}
       >
         <h2 className="text-center text-4xl font-bold mb-8 bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
-          About Educ8Africa
+          About Grow with Educ8Africa
         </h2>
         
         <div className="max-w-7xl mx-auto">
@@ -48,7 +48,7 @@ const AboutSection = ({ darkMode }) => {
               <p className={`text-lg leading-relaxed font-semibold ${
                 darkMode ? 'text-gray-300' : 'text-gray-600'
               }`}>
-                Educ8Africa is a bold knowledge and skill transfer institution on a mission to bridge the gap between academic theory and industry relevance in Africa.
+                Grow with Educ8Africa is a bold knowledge and skill transfer institution on a mission to bridge the gap between academic theory and industry relevance in Africa.
                 Through two powerful arms — our Core Operations and our CSR initiative, Grow with Educ8Africa — we equip Africa's youth with the requisite cybersecurity skills and global credentials needed to lead, protect, and innovate in the digital age.
               </p>
               <p className={`text-lg leading-relaxed font-semibold ${
@@ -58,7 +58,7 @@ const AboutSection = ({ darkMode }) => {
                 Our CSR arm, Grow with Educ8Africa, extends globally recognized cybersecurity certifications to students at subsidized rates, turning potential into job-ready power.
               </p>
               <p className="text-lg leading-relaxed font-bold text-red-600">
-                From hands-on training to industry projects, we are not here to tick boxes — we are here to spark transformation. If you are serious about skills, relevance, and the future of Africa, Educ8Africa is where your journey begins.
+                From hands-on training to industry projects, we are not here to tick boxes — we are here to spark transformation. If you are serious about skills, relevance, and the future of Africa, Grow with Educ8Africa is where your journey begins.
               </p>
             </div>
           </div>
@@ -233,7 +233,7 @@ const AboutSection = ({ darkMode }) => {
                     <p className={`text-lg leading-relaxed ${
                       darkMode ? 'text-gray-300' : 'text-gray-600'
                     }`}>
-                      At Educ8Africa, our mission is to bridge the cybersecurity skills gap across Africa by providing world-class training and certification programs. We empower individuals to protect digital infrastructures and build resilient cyber ecosystems.
+                      At Grow with Educ8Africa, our mission is to bridge the cybersecurity skills gap across Africa by providing world-class training and certification programs. We empower individuals to protect digital infrastructures and build resilient cyber ecosystems.
                     </p>
                     <div className={`bg-gradient-to-br ${!darkMode ? 'from-red-50 to-gray-50' : "dark:from-gray-800 dark:to-gray-900"} p-6 rounded-xl`}>
                       <h4 className={`text-xl font-semibold mb-4 ${

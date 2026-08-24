@@ -86,7 +86,7 @@ const NssBoard = memo(({ darkMode }) => {
         </h2>
         <div className="space-y-4 text-base sm:text-lg leading-relaxed">
           <p className="font-semibold">
-            At Educ8Africa, National Service is not about coffee runs or clock-watching. It is a launchpad.
+            At Grow with Educ8Africa, National Service is not about coffee runs or clock-watching. It is a launchpad.
             Here, you will work on real tech, real training, and real change — alongside a vibrant team pushing boundaries in cybersecurity, innovation, and youth empowerment.
           </p>
           <p className="font-semibold">

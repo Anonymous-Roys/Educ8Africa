@@ -118,7 +118,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
         <div className="flex items-center">
           <img
             src={Logo}
-            alt="Educ8Africa Logo"
+            alt="Grow with Educ8Africa Logo"
             className={`h-12 sm:h-16 cursor-pointer transition-all duration-300 ${
               scrolled ? "h-10 sm:h-12" : ""
             }`}
@@ -130,7 +130,7 @@ const Navbar = ({ darkMode, toggleDarkMode, activeSection = 'home' }) => {
             } hidden sm:block cursor-pointer`}
             onClick={handleLogoClick}
           >
-            Educ8Africa
+            Grow with Educ8Africa
           </span>
         </div>
 

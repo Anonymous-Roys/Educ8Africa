@@ -56,7 +56,7 @@ Message:
 ${formData.message}
 
 ---
-Sent from Educ8Africa Contact Form
+Sent from Grow with Educ8Africa Contact Form
       `.trim();
 
       const mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(`Contact Form: ${formData.subject || 'General Inquiry'} - ${formData.name}`)}&body=${encodeURIComponent(emailBody)}`;
@@ -93,7 +93,7 @@ Sent from Educ8Africa Contact Form
             Contact Us
           </h1>
           <p className="text-lg sm:text-xl lg:text-2xl font-semibold text-red-600 mb-6">
-            Get In Touch With Educ8Africa
+            Get In Touch With Grow with Educ8Africa
           </p>
           <p className="text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
             Have questions about our cybersecurity programs? Want to partner with us? 
@@ -197,7 +197,7 @@ Sent from Educ8Africa Contact Form
                   onClick={() => navigate('/about')}
                   className="block text-red-600 hover:text-red-700 font-medium transition-colors text-left"
                 >
-                  → About Educ8Africa
+                  → About Grow with Educ8Africa
                 </button>
               </div>
             </div>
@@ -344,7 +344,7 @@ Sent from Educ8Africa Contact Form
         <div className="mt-12 lg:mt-16 text-center">
           <div className={`rounded-lg p-6 sm:p-8 shadow-lg ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
             <h2 className="text-2xl font-bold text-red-700 mb-4">
-              Why Choose Educ8Africa?
+              Why Choose Grow with Educ8Africa?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
               <div>

@@ -151,7 +151,7 @@ const JobBoard = ({ darkMode }) => {
             <ul className="list-disc list-inside space-y-1 text-sm mt-2">
               <li>Applicants are expected to manage their time effectively within a flexible remote structure.</li>
               <li>You must be able to collaborate with teams, meet project timelines, and contribute to shared goals.</li>
-              <li>Strong performers may be given priority consideration for future roles within Educ8Africa or its partner network.</li>
+              <li>Strong performers may be given priority consideration for future roles within Grow with Educ8Africa or its partner network.</li>
             </ul>
             
             <span className="block">

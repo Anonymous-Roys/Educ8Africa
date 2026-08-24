@@ -17,7 +17,7 @@ const jobPostings = [
       document: creativeMultimediaDocument,
       company: {
         name: "Grow With Educ8Africa",
-        description: `Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa’s future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy.`
+        description: `Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Grow with Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Grow with Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Grow with Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa's future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy.`
       },
       roleOverview: `Job Purpose: To give every Grow With Educ8Africa campaign, programme, and event a professional visual voice, and to own end-to-end technical production for all organizational webinars.
 
@@ -117,8 +117,8 @@ const jobPostings = [
         "Access to exclusive learning and mentorship opportunities",
         "Direct exposure to projects with real-world impact in education and technology",
         "Certificate of recommendation and professional endorsement upon successful completion",
-        "Priority consideration for future freelance or contract roles with Educ8Africa",
-        "Exceptional performance could lead to future full-time opportunities within Educ8Africa, its partners, and client companies"
+        "Priority consideration for future freelance or contract roles with Grow with Educ8Africa",
+        "Exceptional performance could lead to future full-time opportunities within Grow with Educ8Africa, its partners, and client companies"
       ],
       application: {
         deadline: "Rolling basis (First come first served)",
@@ -136,7 +136,7 @@ const jobPostings = [
         document: leadOutreachDocument,
         company: {
           name: "Grow With Educ8Africa",
-          description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
+          description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Grow with Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Grow with Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
         },
         roleOverview: `Job Purpose: To drive Grow With Educ8Africa’s visibility, reach, and engagement across campuses and youth communities, and to convert that reach into qualified applicants for its programmes.
 
@@ -146,7 +146,7 @@ const jobPostings = [
         keyResponsibilities: {
           salesMarketing: [
             "Perform both sales and marketing responsibilities to drive student enrollment",
-            "Develop and execute marketing initiatives that generate awareness and interest in Educ8Africa’s programs",
+            "Develop and execute marketing initiatives that generate awareness and interest in Grow with Educ8Africa's programs",
             "Engage directly with prospective students to provide information, answer questions, and support their decision to enroll",
             "Track conversion rates from interest to enrollment and refine approaches based on data",
             "Collaborate with the social media and content teams for campaign alignment and outreach visibility"
@@ -154,7 +154,7 @@ const jobPostings = [
           outreachStrategy: [
             "Design and implement creative outreach strategies to generate student interest and engagement",
             "Organize student-focused events such as webinars, EduTalks, and outreach drives",
-            "Represent Educ8Africa at academic fairs, job fairs, and student conferences (online or in-person)",
+            "Represent Grow with Educ8Africa at academic fairs, job fairs, and student conferences (online or in-person)",
             "Coordinate event logistics, support materials, and follow-ups",
             "Share outreach highlights and upcoming event plans with the media team"
           ],
@@ -166,7 +166,7 @@ const jobPostings = [
           partnershipDevelopment: [
             "Identify and reach out to active student associations in relevant IT departments across universities",
             "Initiate communication and build relationships with association executives and faculty coordinators",
-            "Pitch Educ8Africa’s programs and propose mutually beneficial collaborations",
+            "Pitch Grow with Educ8Africa's programs and propose mutually beneficial collaborations",
             "Facilitate meetings and presentations to secure institutional interest"
           ],
           mouCoordination: [
@@ -211,9 +211,9 @@ const jobPostings = [
         benefits: [
           "Strategic leadership experience working closely with the CEO",
           "Hands-on outreach and project management training",
-          "Access to Educ8Africa’s certification programs and resources based on performance",
+          "Access to Grow with Educ8Africa's certification programs and resources based on performance",
           "Completion Certificate + Letter of Recommendation",
-          "Priority consideration for future full-time positions within Educ8Africa, its partners, or clients based on availability and performance"
+          "Priority consideration for future full-time positions within Grow with Educ8Africa, its partners, or clients based on availability and performance"
         ],
         application: {
           deadline: "Rolling basis (First come first served)",
@@ -231,7 +231,7 @@ const jobPostings = [
         document: assistantOutreachDocument,
         company: {
           name: "Grow With Educ8Africa",
-          description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
+          description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Grow with Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Grow with Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
         },
         roleOverview: `Job Purpose: To provide hands-on execution support that turns the campus engagement plan into consistent, well-documented activity on the ground.
 
@@ -241,7 +241,7 @@ const jobPostings = [
         keyResponsibilities: {
           salesMarketing: [
             "Perform both sales and marketing responsibilities to drive student enrollment",
-            "Develop and execute marketing initiatives that generate awareness and interest in Educ8Africa’s programs",
+            "Develop and execute marketing initiatives that generate awareness and interest in Grow with Educ8Africa's programs",
             "Engage directly with prospective students to provide information, answer questions, and support their decision to enroll",
             "Track conversion rates from interest to enrollment and refine approaches based on data",
             "Collaborate with the social media and content teams for campaign alignment and outreach visibility"
@@ -249,7 +249,7 @@ const jobPostings = [
           outreachStrategy: [
             "Design and implement creative outreach strategies to generate student interest and engagement",
             "Organize student-focused events such as webinars, EduTalks, and outreach drives",
-            "Represent Educ8Africa at academic fairs, job fairs, and student conferences (online or in-person)",
+            "Represent Grow with Educ8Africa at academic fairs, job fairs, and student conferences (online or in-person)",
             "Coordinate event logistics, support materials, and follow-ups",
             "Share outreach highlights and upcoming event plans with the media team"
           ],
@@ -261,7 +261,7 @@ const jobPostings = [
           partnershipDevelopment: [
             "Identify and reach out to active student associations in relevant IT departments across universities",
             "Initiate communication and build relationships with association executives and faculty coordinators",
-            "Pitch Educ8Africa’s programs and propose mutually beneficial collaborations",
+            "Pitch Grow with Educ8Africa's programs and propose mutually beneficial collaborations",
             "Facilitate meetings and presentations to secure institutional interest"
           ],
           mouCoordination: [
@@ -327,7 +327,7 @@ const jobPostings = [
   company: {
     name: "Grow With Educ8Africa",
     description:
-      "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa’s cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
+      "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Grow with Educ8Africa — a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Grow with Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates..."
   },
   roleOverview:
     "Job Purpose: To build the external ecosystem that connects Grow With Educ8Africa’s students and alumni to industry, career opportunities, and funding, while leading the organization’s internal people function.\n\nAs the Lead, Partnerships and People Operations, you will lead Grow With Educ8Africa’s internal people function and build the external ecosystem that connects its students and alumni to industry, career opportunities, and funding.\n\nThe role combines people operations, employer partnerships, career development and placement, apprenticeship and mentorship sourcing, alumni engagement, sponsorship, and grant development. You will work with employers, industry professionals, funders, and other strategic stakeholders to strengthen Grow With Educ8Africa’s talent pathways and organisational capacity.",
@@ -364,7 +364,7 @@ const jobPostings = [
       "Match students to roles and track placement results"
     ],
     networking: [
-      "Represent Educ8Africa at conferences and stakeholder meetings",
+      "Represent Grow with Educ8Africa at conferences and stakeholder meetings",
       "Expand the institution's professional network in education and business sectors"
     ],
     impactEvaluation: [
@@ -509,7 +509,7 @@ const jobPostings = [
     "Leadership opportunity in digital engagement",
     "Certificate of service and letter of recommendation",
     "Experience in cybersecurity-focused campaigns",
-    "Priority hiring consideration for future roles in Educ8Africa or partner companies"
+    "Priority hiring consideration for future roles in Grow with Educ8Africa or partner companies"
   ],
   application: {
     deadline: "Rolling basis (First come first served)",
@@ -529,7 +529,7 @@ const jobPostings = [
   company: {
     name: "Grow With Educ8Africa",
     description:
-      "Grow With Educ8Africa is the CSR arm of Educ8Africa — a knowledge and skills transfer company closing Africa’s cybersecurity skills gap. Educ8Africa provides industry-relevant training and certifications to university students and young professionals at highly subsidized rates."
+      "Grow With Educ8Africa is the CSR arm of Grow with Educ8Africa — a knowledge and skills transfer company closing Africa's cybersecurity skills gap. Grow with Educ8Africa provides industry-relevant training and certifications to university students and young professionals at highly subsidized rates."
   },
   roleOverview:
     "Job Purpose: To give Grow With Educ8Africa's learners a technically excellent training experience, from curriculum through certification, while owning AI and business process automation strategy for the whole organization.\n\nThe Lead, Programmes, Training and Technical Enablement owns the technical training experience at Grow With Educ8Africa: curriculum, delivery, learner support, and the underlying technical systems that make it all run. The role also owns AI integration and business process automation for the entire organization, not only Programmes, developing strategy for CEO approval and holding full implementation authority once approved.\n\nThis role combines hands-on teaching with technical systems ownership and people leadership (Trainers, mentors, and program interns), and reports directly to the CEO.",
@@ -612,7 +612,7 @@ const jobPostings = [
     "Flexible work arrangements",
     "Mentorship and leadership growth",
     "Certificate of completion",
-    "Priority consideration for future full-time roles within Educ8Africa, its partners, or clients based on performance"
+    "Priority consideration for future full-time roles within Grow with Educ8Africa, its partners, or clients based on performance"
   ],
   application: {
     deadline: "Rolling basis (First come first served)",
@@ -631,7 +631,7 @@ const jobPostings = [
       document: assistantProgrammesDocument,
       company: {
         name: "Grow With Educ8Africa",
-        description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Educ8Africa - a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa's future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy."
+        description: "Grow With Educ8Africa is the Corporate Social Responsibility (CSR) arm of Grow with Educ8Africa - a dynamic knowledge and skills transfer company committed to closing Africa's cybersecurity skills gap. Grow with Educ8Africa provides globally recognized, practical, and industry-relevant training and certifications to university students and young professionals at highly subsidized rates. Through initiatives such as partially sponsored cybersecurity and tech certification programs, Grow with Educ8Africa empowers young Africans to bridge the gap between academic learning and workforce readiness. Our mission is to equip Africa's future workforce with the critical cybersecurity skills and global credentials needed to secure and thrive in the digital economy."
       },
       roleOverview: "Job Purpose: To provide hands-on technical, administrative, and delivery support that enables Grow With Educ8Africa's training programs to run smoothly and professionally.\n\nThe Assistant, Programmes, Training and Technical Enablement supports the Lead across curriculum, teaching, technical and lab support, webinar coordination, and day-to-day program administration. It is an execution-focused, hands-on role.\n\nCurriculum support applies only to in-house courses; certification programs follow a fixed third-party syllabus and are delivered, not developed. Strategic decisions on curriculum, staffing, mentor and trainer selection, AI adoption, and program direction remain with the Lead.",
       keyResponsibilities: {
@@ -645,7 +645,7 @@ const jobPostings = [
         ],
         contentDevelopmentAndWriting: [
           "Write in-depth, SEO-friendly blog articles covering topics like data privacy, threat intelligence, cloud security, and ethical hacking",
-          "Develop technical explainers, FAQs, and guides based on Educ8Africa training modules",
+          "Develop technical explainers, FAQs, and guides based on Grow with Educ8Africa training modules",
           "Translate complex cybersecurity concepts into clear, digestible content for university students and entry-level professionals",
           "Collaborate with video, design, and social media teams to ensure technical accuracy and consistency in published content",
           "Lead the creation of reusable content templates, glossaries, and writing guides for cybersecurity topics",
@@ -712,7 +712,7 @@ const jobPostings = [
         "Leadership opportunity within a strategic content role",
         "Access to world-class cybersecurity resources and expert contributors",
         "Hands-on experience in bridging technical accuracy and public engagement",
-        "Strong performance may lead to priority consideration for future full-time roles within Educ8Africa, its partners, or clients"
+        "Strong performance may lead to priority consideration for future full-time roles within Grow with Educ8Africa, its partners, or clients"
       ],
       application: {
         deadline: "Rolling basis",

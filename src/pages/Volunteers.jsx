@@ -44,8 +44,8 @@ const Volunteers = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const emailSubject = 'Volunteer Application - Educ8Africa';
-    const emailBody = `Dear Educ8Africa Team,
+    const emailSubject = 'Volunteer Application - Grow with Educ8Africa';
+    const emailBody = `Dear Grow with Educ8Africa Team,
 
 I am interested in volunteering with your organization. Please find my details below:
 
@@ -107,7 +107,7 @@ ${formData.fullName}`;
   return (
     <ToastProvider>
       <MetaTags 
-        title="Call for Volunteers - Educ8Africa"
+        title="Call for Volunteers - Grow with Educ8Africa"
         description="Join our volunteer program and help build Africa's cybersecurity future. Make a difference in youth education and digital literacy."
         url="/volunteers"
       />
@@ -300,7 +300,7 @@ ${formData.fullName}`;
 
                 <div className="mt-6">
                   <label className={`block text-sm font-medium mb-2 ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                    Why do you want to volunteer with Educ8Africa? *
+                    Why do you want to volunteer with Grow with Educ8Africa? *
                   </label>
                   <textarea
                     name="motivation"

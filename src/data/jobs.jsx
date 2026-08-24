@@ -1,9 +1,9 @@
 const jobs = [
   {
     title: "Associate Web Developer",
-    organization: "Educ8africa",
+    organization: "Grow with Educ8africa",
     location: "Remote",
-    description: "Design, code, and maintain websites and web applications for Educ8africa's mission-driven platforms.",
+    description: "Design, code, and maintain websites and web applications for Grow with Educ8africa's mission-driven platforms.",
     responsibilities: {
       WebDevelopment: [
         "Design and develop responsive websites",
@@ -38,7 +38,7 @@ const jobs = [
   },
   {
     title: "Online Community Engagement Associate",
-    organization: "Educ8africa",
+    organization: "Grow with Educ8africa",
     location: "Remote",
     description: "Foster and manage a vibrant online community while providing excellent customer service and support.",
     responsibilities: {
@@ -76,7 +76,7 @@ const jobs = [
   },
   {
     title: "Associate Video Content Creator and Editor",
-    organization: "Educ8africa",
+    organization: "Grow with Educ8africa",
     location: "Remote",
     description: "The Associate Video Content Creator and Editor will be responsible for producing high-quality video content that engages our online community. This role will involve brainstorming, filming, editing, and distributing video content across various platforms.",
     responsibilities: {
@@ -215,9 +215,9 @@ const jobs = [
   },
   {
     title: "Associate Partnership Lead",
-    organization: "Educ8africa",
+    organization: "Grow with Educ8africa",
     location: "[City, Country]",
-    description: "Develop and maintain strategic partnerships with corporations and organizations to enhance resources, funding, and student opportunities at Educ8africa.",
+    description: "Develop and maintain strategic partnerships with corporations and organizations to enhance resources, funding, and student opportunities at Grow with Educ8africa.",
     responsibilities: {
       PartnershipDevelopment: [
         "Identify and cultivate potential partnerships with corporations and relevant organizations",
@@ -269,7 +269,7 @@ const jobs = [
     title: "Online Community Engagement Associate",
     organization: "[Cybersecurity Training Institution Name]",
     location: "[Location]",
-    description: "Foster a positive online community for Educ8africa by engaging with students, alumni, and industry professionals. This role includes community management, customer service, content creation, and analytics.",
+    description: "Foster a positive online community for Grow with Educ8africa by engaging with students, alumni, and industry professionals. This role includes community management, customer service, content creation, and analytics.",
     responsibilities: {
       CommunityManagement: [
         "Foster a positive and inclusive online community environment",
@@ -312,9 +312,9 @@ const jobs = [
   },
   {
     title: "Graphic Designer",
-    organization: "Educ8africa",
+    organization: "Grow with Educ8africa",
     location: "Remote",
-    description: "Create visually compelling graphics and designs to enhance Educ8africa's branding and communications. Collaborate with the marketing and content teams to produce materials that resonate with our audience.",
+    description: "Create visually compelling graphics and designs to enhance Grow with Educ8africa's branding and communications. Collaborate with the marketing and content teams to produce materials that resonate with our audience.",
     responsibilities: {
       DesignCreation: [
         "Develop engaging graphics for platforms including social media, websites, newsletters, and promotional materials",
@@ -450,14 +450,14 @@ const jobs = [
       ],
       AudienceEngagement: [
           "Monitor social media platforms, responding to comments, messages, and inquiries in a timely manner.",
-          "Engage with followers to foster a sense of community and encourage interaction with Educ8africa’s content."
+          "Engage with followers to foster a sense of community and encourage interaction with Grow with Educ8africa's content."
       ],
       CampaignManagement: [
           "Assist in managing social media campaigns, ensuring consistent messaging and branding across all platforms.",
           "Help with paid promotions and ads on platforms like Facebook, Instagram, LinkedIn, and Twitter."
       ],
       TrendsAndInnovations: [
-          "Stay updated on social media trends, tools, and features to keep Educ8africa’s social media presence fresh and engaging.",
+          "Stay updated on social media trends, tools, and features to keep Grow with Educ8africa's social media presence fresh and engaging.",
           "Recommend new ideas for improving social media engagement and visibility."
       ],
       Analytics: [
@@ -581,7 +581,7 @@ const jobs = [
 ,
 {
   title: "Personal Assistant to the CEO",
-  organization: "Grow with Educ8africa, a subsidiary of Educ8africa",
+  organization: "Grow with Educ8africa, a subsidiary of Grow with Educ8africa",
   location: "[City, State]",
   description: "Gain hands-on experience in a dynamic EdTech environment by supporting senior leadership in efficient operations, strategic initiatives, and organizational communication. This role is ideal for detail-oriented individuals with strong communication skills, looking to develop their professional expertise.",
   responsibilities: {

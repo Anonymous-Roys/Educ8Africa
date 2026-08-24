@@ -48,8 +48,8 @@ const Mentors = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const emailSubject = 'Mentor Application - Educ8Africa';
-    const emailBody = `Dear Educ8Africa Mentorship Team,
+    const emailSubject = 'Mentor Application - Grow with Educ8Africa';
+    const emailBody = `Dear Grow with Educ8Africa Mentorship Team,
 
 I am interested in becoming a mentor for your organization. Please find my details below:
 
@@ -124,7 +124,7 @@ ${formData.fullName}`;
   return (
     <ToastProvider>
       <MetaTags 
-        title="Call for Mentors - Educ8Africa"
+        title="Call for Mentors - Grow with Educ8Africa"
         description="Become a mentor and shape the next generation of African cybersecurity professionals. Share your expertise and make a lasting impact."
         url="/mentors"
       />
@@ -195,7 +195,7 @@ ${formData.fullName}`;
                   Why Become a Mentor?
                 </h2>
                 <p className={`text-lg max-w-3xl mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                  Mentoring with Educ8Africa offers you the opportunity to give back while growing personally and professionally.
+                  Mentoring with Grow with Educ8Africa offers you the opportunity to give back while growing personally and professionally.
                 </p>
               </div>
               
